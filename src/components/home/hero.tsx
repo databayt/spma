@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const easeOut: [number, number, number, number] = [0.33, 1, 0.68, 1];
 
 const videoVariants = {
-  hidden: { x: "-40%", scale: 1.4, opacity: 1 },
+  hidden: { x: "20%", scale: 1.4, opacity: 1 },
   visible: {
     x: 0,
     scale: 1,
@@ -15,7 +15,7 @@ const videoVariants = {
 };
 
 const textVariants = {
-  hidden: { x: "-80%", opacity: 0 },
+  hidden: { x: "-30%", opacity: 0 },
   visible: {
     x: 0,
     opacity: 1,
@@ -49,7 +49,7 @@ export function Hero({ lang }: HeroProps) {
             initial="hidden"
             animate="visible"
           >
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-medium text-black dark:text-white leading-[1.1] tracking-tight mb-8">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-black dark:text-white leading-[1.1] tracking-tight mb-8">
               {isAr ? (
                 <>
                   <span className="whitespace-nowrap">الجمعية السودانية</span>
@@ -58,12 +58,15 @@ export function Hero({ lang }: HeroProps) {
                 </>
               ) : (
                 <>
-                  <span className="whitespace-nowrap">Sudanese Project</span>
+                  Sudanese Project
                   <br />
-                  Management Association
+                  <span className="whitespace-nowrap">Management Assoc.</span>
                 </>
               )}
             </h1>
+            <p className="text-2xl md:text-3xl text-muted-foreground mb-8">
+              {isAr ? "من أجل الناس" : "For good of people"}
+            </p>
             <motion.div
               variants={buttonVariants}
               initial="hidden"

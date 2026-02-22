@@ -20,7 +20,7 @@ export function MobileDreamSection({ dictionary }: MobileDreamSectionProps) {
       {/* Title Block */}
       <div className="mb-8">
         {/* FIND */}
-        <h2 className="text-[19vw] font-bold text-[#ED6C00] leading-[0.9]">
+        <h2 className="text-[19vw] font-bold text-[#F0B135] leading-[0.9]">
           FIND
         </h2>
 
@@ -28,13 +28,13 @@ export function MobileDreamSection({ dictionary }: MobileDreamSectionProps) {
         <div className="flex items-center justify-end">
           {/* YOUR - Vertical text beside DREAM */}
           <span
-            className="text-[4vw] font-extrabold text-[#ED6C00] tracking-[0.15em]"
+            className="text-[4vw] font-extrabold text-[#F0B135] tracking-[0.15em]"
             style={{ writingMode: 'vertical-lr', transform: 'rotate(180deg)' }}
           >
             YOUR
           </span>
           {/* DREAM */}
-          <h2 className="text-[19vw] font-bold text-[#ED6C00] leading-[0.9] -ml-1">
+          <h2 className="text-[19vw] font-bold text-[#F0B135] leading-[0.9] -ms-1">
             DREAM
           </h2>
         </div>

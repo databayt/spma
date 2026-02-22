@@ -11,9 +11,12 @@ import Image from "next/image";
 import { getArticleBySlug } from "@/components/article/action";
 import { ARABIC_MONTH_NAMES } from "@/components/article/constant";
 import Loading from "@/components/atom/loading";
+import { useTranslations } from "@/lib/use-translations";
 
 export default function ArticlePage() {
   const params = useParams();
+  const { t } = useTranslations();
+  const a = t.article;
   const [article, setArticle] = useState<Article | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -92,7 +95,7 @@ export default function ArticlePage() {
             "mb-6",
           )}
         >
-          → الرجوع
+          → {a?.goBack ?? "الرجوع"}
         </Link>
 
         <article>
@@ -106,7 +109,7 @@ export default function ArticlePage() {
             />
           </div>
 
-          <header className="mb-8 text-right">
+          <header className="mb-8 text-end">
             <h1>{article.title}</h1>
             <div className="flex items-center text-sm text-gray-600 gap-2">
               <span>{article.author}</span>
@@ -115,12 +118,12 @@ export default function ArticlePage() {
             </div>
           </header>
 
-          <div className="bg-gray-100 dark:bg-neutral-900 md:p-6 p-4 rounded-lg md:mb-6 mb-4 rtl">
-            <p className="text-right">{article.description}</p>
+          <div className="bg-gray-100 dark:bg-neutral-900 md:p-6 p-4 rounded-lg md:mb-6 mb-4">
+            <p className="text-end">{article.description}</p>
           </div>
 
-          <div className="prose max-w-none rtl">
-            <p className="text-right">{article.body}</p>
+          <div className="prose max-w-none">
+            <p className="text-end">{article.body}</p>
           </div>
         </article>
       </div>

@@ -5,6 +5,8 @@ import { Header } from "@/components/template/header/header";
 import { Footer } from "@/components/template/footer/footer";
 import LibraryMyProfileContent from "@/components/library/my-profile/content";
 
+export const dynamic = "force-dynamic";
+
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params;
   return {

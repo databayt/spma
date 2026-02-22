@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import { videos } from "@/components/template/video/constant";
 import { VideoItem } from "@/components/template/video/type";
+import { useTranslations } from "@/lib/use-translations";
 
 const VideoLoading = () => {
   return (
@@ -20,6 +21,8 @@ const VideoLoading = () => {
 
 export default function VideoPage() {
   const params = useParams();
+  const { t } = useTranslations();
+  const a = t.article;
   const [video, setVideo] = useState<VideoItem | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -69,11 +72,11 @@ export default function VideoPage() {
             "mb-6",
           )}
         >
-          → الرجوع
+          → {a?.goBack ?? "الرجوع"}
         </Link>
 
         <article>
-          <header className="mb-8 text-right">
+          <header className="mb-8 text-end">
             <h1 className="font-heading md:text-3xl text-xl font-bold md:mb-2 mb-1">
               {video.title}
             </h1>
@@ -95,14 +98,14 @@ export default function VideoPage() {
             ></iframe>
           </div>
 
-          <div className="bg-gray-100 dark:bg-neutral-900 md:p-6 p-4 rounded-lg md:mb-6 mb-4 rtl">
-            <p className="text-lg leading-relaxed text-right">
+          <div className="bg-gray-100 dark:bg-neutral-900 md:p-6 p-4 rounded-lg md:mb-6 mb-4">
+            <p className="text-lg leading-relaxed text-end">
               {video.description}
             </p>
           </div>
 
-          <div className="prose max-w-none rtl">
-            <p className="text-right">
+          <div className="prose max-w-none">
+            <p className="text-end">
               هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
               هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
               العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها

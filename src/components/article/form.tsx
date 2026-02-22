@@ -23,6 +23,7 @@ import {
 } from "@/components/ui/command";
 import { CheckIcon, ChevronsUpDown } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "@/lib/use-translations";
 
 interface ArticleFormProps {
   mode: "create" | "edit";
@@ -47,6 +48,8 @@ export default function ArticleForm({
   onSuccess,
 }: ArticleFormProps) {
   const router = useRouter();
+  const { t } = useTranslations();
+  const a = t.article;
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [uploadedImage, setUploadedImage] = useState<string | null>(
@@ -104,7 +107,7 @@ export default function ArticleForm({
       setError(null);
 
       if (!uploadedImage) {
-        setError("الرجاء تحميل صورة للمقال");
+        setError(a?.imageRequired ?? "الرجاء تحميل صورة للمقال");
         setIsSubmitting(false);
         return;
       }
@@ -123,7 +126,7 @@ export default function ArticleForm({
       }
 
       if (result.status === "error") {
-        setError(result.message || "حدث خطأ غير معروف");
+        setError(result.message || a?.unknownError || "حدث خطأ غير معروف");
         setIsSubmitting(false);
         return;
       }
@@ -131,7 +134,7 @@ export default function ArticleForm({
       router.refresh();
       if (onSuccess) onSuccess();
     } catch (err) {
-      setError(err instanceof Error ? err.message : "حدث خطأ غير معروف");
+      setError(err instanceof Error ? err.message : a?.unknownError ?? "حدث خطأ غير معروف");
     } finally {
       setIsSubmitting(false);
     }
@@ -140,9 +143,7 @@ export default function ArticleForm({
   return (
     <form
       onSubmit={form.handleSubmit(handleSubmit)}
-      className="space-y-8 text-right"
-      dir="rtl"
-      style={{ direction: "rtl" }}
+      className="space-y-8 text-end"
     >
       {error && (
         <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-md">
@@ -156,12 +157,11 @@ export default function ArticleForm({
             id="title"
             {...form.register("title")}
             onChange={handleTitleChange}
-            placeholder="عنوان المقال"
-            dir="rtl"
-            className="text-right"
+            placeholder={a?.titlePlaceholder ?? "عنوان المقال"}
+            className="text-end"
           />
           {form.formState.errors.title && (
-            <p className="text-red-500 text-sm mt-1 text-right">
+            <p className="text-red-500 text-sm mt-1 text-end">
               {form.formState.errors.title.message}
             </p>
           )}
@@ -171,13 +171,12 @@ export default function ArticleForm({
           <Textarea
             id="description"
             {...form.register("description")}
-            placeholder="وصف موجز للمقال"
+            placeholder={a?.descriptionPlaceholder ?? "وصف موجز للمقال"}
             rows={3}
-            dir="rtl"
-            className="text-right resize-none"
+            className="text-end resize-none"
           />
           {form.formState.errors.description && (
-            <p className="text-red-500 text-sm mt-1 text-right">
+            <p className="text-red-500 text-sm mt-1 text-end">
               {form.formState.errors.description.message}
             </p>
           )}
@@ -190,19 +189,18 @@ export default function ArticleForm({
                 variant="outline"
                 role="combobox"
                 aria-expanded={authorOpen}
-                className="w-full justify-between text-right"
-                dir="rtl"
+                className="w-full justify-between text-end"
               >
                 {form.getValues("author") ? (
                   form.getValues("author")
                 ) : (
-                  <span className="text-muted-foreground">اختر كاتب</span>
+                  <span className="text-muted-foreground">{a?.selectAuthor ?? "اختر كاتب"}</span>
                 )}
-                <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+                <ChevronsUpDown className="ms-2 h-4 w-4 shrink-0 opacity-50" />
               </Button>
             </PopoverTrigger>
             <PopoverContent className="w-full p-0" align="start">
-              <Command dir="rtl">
+              <Command>
                 <CommandList>
                   <CommandGroup>
                     {authors.map((author) => (
@@ -210,11 +208,11 @@ export default function ArticleForm({
                         key={author}
                         value={author}
                         onSelect={() => handleAuthorSelect(author)}
-                        className="text-right"
+                        className="text-end"
                       >
                         <CheckIcon
                           className={cn(
-                            "mr-2 h-4 w-4",
+                            "me-2 h-4 w-4",
                             form.getValues("author") === author
                               ? "opacity-100"
                               : "opacity-0",
@@ -229,7 +227,7 @@ export default function ArticleForm({
             </PopoverContent>
           </Popover>
           {form.formState.errors.author && (
-            <p className="text-red-500 text-sm mt-1 text-right">
+            <p className="text-red-500 text-sm mt-1 text-end">
               {form.formState.errors.author.message}
             </p>
           )}
@@ -240,7 +238,7 @@ export default function ArticleForm({
             type="file"
             accept="image/*"
             onChange={handleImageChange}
-            className="w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-primary file:text-primary-foreground hover:file:bg-primary/90"
+            className="w-full text-sm text-gray-500 file:me-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-primary file:text-primary-foreground hover:file:bg-primary/90"
           />
           <input
             type="hidden"
@@ -257,7 +255,7 @@ export default function ArticleForm({
             </div>
           )}
           {form.formState.errors.image && (
-            <p className="text-red-500 text-sm mt-1 text-right">
+            <p className="text-red-500 text-sm mt-1 text-end">
               {form.formState.errors.image.message}
             </p>
           )}
@@ -268,13 +266,12 @@ export default function ArticleForm({
             id="body"
             {...form.register("body")}
             onChange={handleTextareaChange}
-            placeholder="المحتوى الكامل للمقال"
+            placeholder={a?.bodyPlaceholder ?? "المحتوى الكامل للمقال"}
             style={{ height: textareaHeight }}
-            dir="rtl"
-            className="text-right resize-none"
+            className="text-end resize-none"
           />
           {form.formState.errors.body && (
-            <p className="text-red-500 text-sm mt-1 text-right">
+            <p className="text-red-500 text-sm mt-1 text-end">
               {form.formState.errors.body.message}
             </p>
           )}
@@ -288,10 +285,10 @@ export default function ArticleForm({
           className="bg-primary text-white"
         >
           {isSubmitting
-            ? "جاري المعالجة..."
+            ? (a?.processing ?? "جاري المعالجة...")
             : mode === "create"
-              ? "إنشاء المقال"
-              : "تحديث المقال"}
+              ? (a?.createArticle ?? "إنشاء المقال")
+              : (a?.updateArticle ?? "تحديث المقال")}
         </Button>
       </div>
     </form>

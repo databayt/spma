@@ -79,13 +79,13 @@ export function DreamSection({ dictionary }: DreamSectionProps) {
   // Box animations - starts at 0 (when section reaches top), completes at 0.4
   const boxY = useTransform(smoothProgress, [0, 0.4], [10, 205]);
   const boxHeight = useTransform(smoothProgress, [0, 0.4], ['140px', '480px']);
-  const boxBgColor = useTransform(smoothProgress, [0, 0.4], ['#E5E5E5', '#ED6C00']);
+  const boxBgColor = useTransform(smoothProgress, [0, 0.4], ['#E5E5E5', '#F0B135']);
 
   // Text animations ("YOUR DREAM" moves left, both texts turn gray suddenly at end)
   const textX = useTransform(smoothProgress, [0, 0.4], [0, -285]);
-  const textColor = useTransform(smoothProgress, [0.35, 0.4], ['#ED6C00', '#E5E5E5']);
-  const findColor = useTransform(smoothProgress, [0.35, 0.4], ['#ED6C00', '#E5E5E5']);
-  const subtitleColor = useTransform(smoothProgress, [0.35, 0.4], ['#171717', '#ED6C00']);
+  const textColor = useTransform(smoothProgress, [0.35, 0.4], ['#F0B135', '#E5E5E5']);
+  const findColor = useTransform(smoothProgress, [0.35, 0.4], ['#F0B135', '#E5E5E5']);
+  const subtitleColor = useTransform(smoothProgress, [0.35, 0.4], ['#171717', '#F0B135']);
 
   // Track when animation completes to enable tag hover
   useMotionValueEvent(scrollYProgress, 'change', (latest) => {
@@ -147,7 +147,7 @@ export function DreamSection({ dictionary }: DreamSectionProps) {
           <div className="relative w-[clamp(7rem,18vw,16rem)] flex-shrink-0 self-start">
             {/* Animated ? box - absolutely positioned so height expansion doesn't affect layout */}
             <motion.div
-              className="absolute top-0 left-0 w-full rounded-lg flex flex-col items-center justify-center will-change-transform overflow-hidden"
+              className="absolute top-0 start-0 w-full rounded-lg flex flex-col items-center justify-center will-change-transform overflow-hidden"
               style={{
                 y: boxY,
                 height: boxHeight,
@@ -175,7 +175,7 @@ export function DreamSection({ dictionary }: DreamSectionProps) {
                           transition={{ duration: 0.15 }}
                           className="flex flex-col items-center"
                         >
-                          <span className="text-xs uppercase tracking-wider text-[#F5A623]">
+                          <span className="text-xs uppercase tracking-wider text-[#F0B135]">
                             {tags.find(t => t.id === hoveredTag)?.services[0]}
                           </span>
                           <span className="text-lg font-extrabold mt-1 leading-tight">
@@ -234,7 +234,7 @@ export function DreamSection({ dictionary }: DreamSectionProps) {
 
           {/* YOUR DREAM - animated container */}
           <motion.div
-            className="flex items-center flex-grow justify-end -ml-3"
+            className="flex items-center flex-grow justify-end -ms-3"
             style={{ x: textX }}
           >
             {/* YOUR - Vertical text */}
@@ -251,7 +251,7 @@ export function DreamSection({ dictionary }: DreamSectionProps) {
 
             {/* DREAM */}
             <motion.span
-              className="text-[clamp(3rem,15vw,12rem)] font-black leading-[0.8] -ml-3"
+              className="text-[clamp(3rem,15vw,12rem)] font-black leading-[0.8] -ms-3"
               style={{ color: textColor }}
             >
               DREAM
@@ -262,16 +262,16 @@ export function DreamSection({ dictionary }: DreamSectionProps) {
         {/* Mobile Title Row - no scroll animation */}
         <div className="flex md:hidden flex-col items-center gap-2 mb-8">
           <div className="flex items-center gap-2">
-            <span className="text-4xl font-black text-[#ED6C00] leading-[0.9]">FIND</span>
+            <span className="text-4xl font-black text-[#F0B135] leading-[0.9]">FIND</span>
             <div className="w-12 h-10 bg-neutral-200 rounded-md flex items-center justify-center">
               <span className="text-2xl text-white font-light">?</span>
             </div>
           </div>
-          <span className="text-4xl font-black text-[#ED6C00] leading-[0.9]">YOUR DREAM</span>
+          <span className="text-4xl font-black text-[#F0B135] leading-[0.9]">YOUR DREAM</span>
         </div>
 
         {/* Subtitle */}
-        <p className="text-center md:text-left text-xl md:text-3xl lg:text-4xl font-black text-foreground mb-8 md:mb-14 md:ml-[50%] pr-0 md:pr-4">
+        <p className="text-center md:text-start text-xl md:text-3xl lg:text-4xl font-black text-foreground mb-8 md:mb-14 md:ms-[50%] pe-0 md:pe-4">
           {dreamDict.subtitle.split('what').map((part, i, arr) => (
             <span key={i}>
               {part}
@@ -283,7 +283,7 @@ export function DreamSection({ dictionary }: DreamSectionProps) {
         </p>
 
         {/* Hashtag Tag Cloud */}
-        <div className="md:ml-[50%] pr-0 md:pr-8 lg:pr-16 xl:pr-24">
+        <div className="md:ms-[50%] pe-0 md:pe-8 lg:pe-16 xl:pe-24">
           <div className="flex flex-wrap justify-center md:justify-start gap-3">
             {tags.map((tag) => {
               const isHovered = hoveredTag === tag.id;

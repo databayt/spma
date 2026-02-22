@@ -156,7 +156,7 @@ function SlideItem({
     <div className="relative flex-shrink-0 flex flex-col items-center">
       {/* Date - above slide, aligned right */}
       <motion.div
-        className={cn("text-right", isMobile ? "mb-2" : "mb-3")}
+        className={cn("text-end", isMobile ? "mb-2" : "mb-3")}
         style={{ opacity: textOpacity, width }}
       >
         <span className={cn(
@@ -185,7 +185,7 @@ function SlideItem({
 
       {/* Title - below slide, aligned left */}
       <motion.div
-        className={cn("text-left", isMobile ? "mt-2" : "mt-3")}
+        className={cn("text-start", isMobile ? "mt-2" : "mt-3")}
         style={{ opacity: textOpacity, width }}
       >
         <span className={cn(

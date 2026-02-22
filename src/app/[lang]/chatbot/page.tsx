@@ -209,7 +209,7 @@ export default function ChatbotPage() {
                   className={cn(
                     "rounded-lg px-3 py-2 max-w-[80%] break-words",
                     message.isUser
-                      ? "bg-primary text-white ml-auto"
+                      ? "bg-primary text-white ms-auto"
                       : "bg-muted"
                   )}
                 >

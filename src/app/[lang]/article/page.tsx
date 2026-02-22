@@ -15,9 +15,12 @@ import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { ARABIC_MONTH_NAMES } from "@/components/article/constant";
 import Loading from "@/components/atom/loading";
+import { useTranslations } from "@/lib/use-translations";
 
 export default function AllArticlesPage() {
   const router = useRouter();
+  const { t } = useTranslations();
+  const a = t.article;
   const { modal, openModal, closeModal } = useModal();
   const [articles, setArticles] = React.useState<Article[]>([]);
   const [editingArticleId, setEditingArticleId] = React.useState<string | null>(
@@ -82,27 +85,27 @@ export default function AllArticlesPage() {
   };
 
   const handleDelete = async (id: string) => {
-    toast("هل تريد حذف هذا المقال؟", {
+    toast(a?.deletePrompt ?? "هل تريد حذف هذا المقال؟", {
       action: {
-        label: "حذف",
+        label: t.common.delete,
         onClick: async () => {
           try {
             await deleteArticle(id);
             setArticles(articles.filter((article) => article.id !== id));
-            toast.success("تم حذف المقال بنجاح", {
+            toast.success(a?.deleteSuccess ?? "تم حذف المقال بنجاح", {
               position: "bottom-right",
               style: { backgroundColor: "rgb(239, 68, 68)", color: "white" },
             });
           } catch (error) {
             console.error("Error deleting article:", error);
-            toast.error("حدث خطأ أثناء حذف المقال", {
+            toast.error(a?.deleteError ?? "حدث خطأ أثناء حذف المقال", {
               position: "bottom-right",
             });
           }
         },
       },
       cancel: {
-        label: "إلغاء",
+        label: t.common.cancel,
         onClick: () => {},
       },
       duration: 10000,
@@ -132,7 +135,7 @@ export default function AllArticlesPage() {
         .catch((error) => console.log("Error sharing", error));
     } else {
       navigator.clipboard.writeText(window.location.origin + item.link);
-      toast.success("تم نسخ الرابط إلى الحافظة", {
+      toast.success(a?.linkCopied ?? "تم نسخ الرابط إلى الحافظة", {
         position: "bottom-right",
       });
     }
@@ -160,8 +163,8 @@ export default function AllArticlesPage() {
 
   return (
     <div className="">
-      <div className="pr-2">
-        <SiteHeading title="المقالات" description="" align="start" />
+      <div className="pe-2">
+        <SiteHeading title={a?.title ?? "المقالات"} description="" align="start" />
       </div>
       <div className="max-w-5xl mx-auto -mt-14">
         <div className="flex justify-between items-center md:mt-6 mt-10">
@@ -172,7 +175,7 @@ export default function AllArticlesPage() {
               openModal(null);
             }}
           >
-            إضافة مقال
+            {a?.addArticle ?? "إضافة مقال"}
           </Button>
         </div>
 
@@ -186,8 +189,7 @@ export default function AllArticlesPage() {
         {formattedArticles.length === 0 && (
           <div className="text-center py-12">
             <p className="text-gray-500 dark:text-gray-400">
-              No articles found. Create your first article by clicking the
-              button above.
+              {a?.noArticles ?? "No articles found. Create your first article by clicking the button above."}
             </p>
           </div>
         )}

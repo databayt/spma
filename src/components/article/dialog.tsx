@@ -14,6 +14,7 @@ import ArticleForm from "./form";
 import { useModal } from "@/components/atom/modal/context";
 import Modal from "@/components/atom/modal/modal";
 import CreateArticle from "./create";
+import { useTranslations } from "@/lib/use-translations";
 
 interface ArticleDialogProps {
   mode: "create" | "edit";
@@ -29,6 +30,8 @@ export function ArticleDialog({
   onSuccess,
 }: ArticleDialogProps) {
   const [open, setOpen] = React.useState(false);
+  const { t } = useTranslations();
+  const a = t.article;
 
   const handleSuccess = () => {
     setOpen(false);
@@ -51,13 +54,12 @@ export function ArticleDialog({
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>{trigger}</DialogTrigger>
       <DialogContent
-        style={{ width: "100vw", maxWidth: "100vw", direction: "rtl" }}
-        className="h-[100vh] max-h-[100vh] overflow-y-auto p-0 rounded-none border-0 rtl"
-        dir="rtl"
+        style={{ width: "100vw", maxWidth: "100vw" }}
+        className="h-[100vh] max-h-[100vh] overflow-y-auto p-0 rounded-none border-0"
       >
-        <DialogHeader className="rtl text-right" dir="rtl">
-          <DialogTitle className="text-right" dir="rtl">
-            {mode === "create" ? "إضافة مقال جديد" : "تعديل المقال"}
+        <DialogHeader className="text-end">
+          <DialogTitle className="text-end">
+            {mode === "create" ? (a?.addNewArticle ?? "إضافة مقال جديد") : (a?.editArticle ?? "تعديل المقال")}
           </DialogTitle>
         </DialogHeader>
         <div className="flex justify-center">
@@ -77,10 +79,12 @@ export function ArticleDialog({
 
 export function CreateArticleButton() {
   const { modal, openModal, closeModal } = useModal();
+  const { t } = useTranslations();
+  const a = t.article;
   return (
     <>
       <Button variant="outline" onClick={() => openModal(null)}>
-        إضافة مقال
+        {a?.addArticle ?? "إضافة مقال"}
       </Button>
       {modal.open && <Modal content={<CreateArticle onClose={closeModal} />} />}
     </>

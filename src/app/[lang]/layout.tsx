@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Rubik } from "next/font/google";
 import { getDir, type Locale, i18n } from "@/components/internationalization/config";
 import { ThemeProvider } from "@/components/atom/theme-provider";
+import { DirectionProvider } from "@/components/ui/direction";
 import { ChatbotContent } from "@/components/chatbot/content";
 import "../globals.css";
 
@@ -70,10 +71,12 @@ export default async function LangLayout({
       <body
         className={`${rubik.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeProvider>
-          {children}
-          <ChatbotContent />
-        </ThemeProvider>
+        <DirectionProvider dir={dir}>
+          <ThemeProvider>
+            {children}
+            <ChatbotContent />
+          </ThemeProvider>
+        </DirectionProvider>
       </body>
     </html>
   );

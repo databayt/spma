@@ -1,4 +1,23 @@
 {
+  "events": {
+    "title": "Events",
+    "all": "All",
+    "workshops": "Workshops",
+    "webinars": "Webinars",
+    "courses": "Courses",
+    "online": "Online",
+    "inPerson": "In Person",
+    "registerNow": "Register Now"
+  },
+  "knowledge": {
+    "title": "Knowledge Hub",
+    "videos": "Videos",
+    "articles": "Articles",
+    "podcast": "Podcast"
+  },
+  "membership": {
+    "title": "Membership"
+  },
   "common": {
     "appName": "Abdout",
     "appNameShort": "SPMA",
@@ -22,6 +41,8 @@
     "none": "None",
     "required": "Required",
     "optional": "Optional",
+    "joinUs": "Join Us",
+    "readMore": "Read More",
     "success": "Success",
     "error": "Error occurred",
     "warning": "Warning",
@@ -785,6 +806,22 @@
     "positiveNumber": "Must be a positive number"
   },
   "about": {
+    "sectionTitle": "About Us",
+    "whoWeAre": "Who We Are",
+    "whoWeAreText": "The Sudanese Project Management Association (SPMA) is a professional body dedicated to advancing project management practices in Sudan.",
+    "vision": "Our Vision",
+    "visionText": "To be the leading professional body for project management excellence in Sudan and the region.",
+    "mission": "Our Mission",
+    "missionPoints": [
+      "Promote project management best practices",
+      "Develop professional competencies",
+      "Build a community of practice",
+      "Support knowledge sharing and continuous learning"
+    ],
+    "goals": "Our Goals",
+    "howToJoin": "How to Join",
+    "boardPeriod": "Current Board Period",
+    "board": "Board of Directors",
     "sections": {
       "who": {
         "subtitle": "W h o   W e   A r e",
@@ -1546,7 +1583,9 @@
       "description": "Subscribe to receive the latest news and updates.",
       "placeholder": "Enter your email",
       "button": "Subscribe"
-    }
+    },
+    "library": "Library",
+    "knowledge": "Knowledge"
   },
   "library": {
     "title": "Electronic Library",
@@ -1636,6 +1675,36 @@
       "creating": "Creating...",
       "addBookToLibrary": "Add Book to Library",
       "actions": "Actions"
+    }
+  },
+  "article": {
+    "title": "Articles",
+    "addArticle": "Add Article",
+    "editArticle": "Edit Article",
+    "createArticle": "Create Article",
+    "updateArticle": "Update Article",
+    "addNewArticle": "Add New Article",
+    "titlePlaceholder": "Article title",
+    "descriptionPlaceholder": "Brief description of the article",
+    "bodyPlaceholder": "Full article content",
+    "selectAuthor": "Select author",
+    "imageRequired": "Please upload an image for the article",
+    "unknownError": "An unknown error occurred",
+    "processing": "Processing...",
+    "goBack": "Go Back",
+    "noArticles": "No articles found. Create your first article by clicking the button above.",
+    "deleteConfirmTitle": "Are you sure?",
+    "deleteConfirmDescription": "This will permanently delete the article. This action cannot be undone.",
+    "deleting": "Deleting...",
+    "deleteSuccess": "Article deleted successfully",
+    "deleteError": "Error deleting article",
+    "deletePrompt": "Do you want to delete this article?",
+    "linkCopied": "Link copied to clipboard",
+    "contextMenu": {
+      "open": "Open",
+      "edit": "Edit",
+      "share": "Share",
+      "delete": "Delete"
     }
   }
 }

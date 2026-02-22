@@ -112,7 +112,7 @@ export function PickupSectionMobile({
         </div>
 
         {/* Badge + Date */}
-        <div className="text-right">
+        <div className="text-end">
           {currentSlide?.category && (
             <span className="inline-block px-3 py-1 bg-muted text-foreground text-sm font-medium rounded mb-2">
               {currentSlide.category}

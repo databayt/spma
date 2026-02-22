@@ -1,4 +1,23 @@
 {
+  "events": {
+    "title": "الفعاليات",
+    "all": "الكل",
+    "workshops": "ورش العمل",
+    "webinars": "الندوات",
+    "courses": "الدورات",
+    "online": "عبر الإنترنت",
+    "inPerson": "حضوري",
+    "registerNow": "سجل الآن"
+  },
+  "knowledge": {
+    "title": "مركز المعرفة",
+    "videos": "فيديوهات",
+    "articles": "مقالات",
+    "podcast": "بودكاست"
+  },
+  "membership": {
+    "title": "العضوية"
+  },
   "common": {
     "appName": "عبدوت",
     "appNameShort": "SPMA",
@@ -22,6 +41,8 @@
     "none": "لا شيء",
     "required": "مطلوب",
     "optional": "اختياري",
+    "joinUs": "انضم إلينا",
+    "readMore": "اقرأ المزيد",
     "success": "تم بنجاح",
     "error": "حدث خطأ",
     "warning": "تحذير",
@@ -785,6 +806,22 @@
     "positiveNumber": "يجب أن يكون رقماً موجباً"
   },
   "about": {
+    "sectionTitle": "عن الجمعية",
+    "whoWeAre": "من نحن",
+    "whoWeAreText": "الجمعية السودانية لإدارة المشاريع هي هيئة مهنية مكرسة لتطوير ممارسات إدارة المشاريع في السودان.",
+    "vision": "رؤيتنا",
+    "visionText": "أن نكون الهيئة المهنية الرائدة في التميز في إدارة المشاريع في السودان والمنطقة.",
+    "mission": "رسالتنا",
+    "missionPoints": [
+      "تعزيز أفضل ممارسات إدارة المشاريع",
+      "تطوير الكفاءات المهنية",
+      "بناء مجتمع ممارسة",
+      "دعم تبادل المعرفة والتعلم المستمر"
+    ],
+    "goals": "أهدافنا",
+    "howToJoin": "كيفية الانضمام",
+    "boardPeriod": "فترة المجلس الحالية",
+    "board": "مجلس الإدارة",
     "sections": {
       "who": {
         "subtitle": "م ن   ن ح ن",
@@ -1546,7 +1583,9 @@
       "description": "اشترك لتلقي آخر الأخبار والتحديثات.",
       "placeholder": "أدخل بريدك الإلكتروني",
       "button": "اشتراك"
-    }
+    },
+    "library": "المكتبة",
+    "knowledge": "المعرفة"
   },
   "library": {
     "title": "المكتبة الإلكترونية",
@@ -1636,6 +1675,36 @@
       "creating": "جاري الإنشاء...",
       "addBookToLibrary": "إضافة كتاب للمكتبة",
       "actions": "الإجراءات"
+    }
+  },
+  "article": {
+    "title": "المقالات",
+    "addArticle": "إضافة مقال",
+    "editArticle": "تعديل المقال",
+    "createArticle": "إنشاء المقال",
+    "updateArticle": "تحديث المقال",
+    "addNewArticle": "إضافة مقال جديد",
+    "titlePlaceholder": "عنوان المقال",
+    "descriptionPlaceholder": "وصف موجز للمقال",
+    "bodyPlaceholder": "المحتوى الكامل للمقال",
+    "selectAuthor": "اختر كاتب",
+    "imageRequired": "الرجاء تحميل صورة للمقال",
+    "unknownError": "حدث خطأ غير معروف",
+    "processing": "جاري المعالجة...",
+    "goBack": "الرجوع",
+    "noArticles": "لا توجد مقالات. أنشئ أول مقال بالنقر على الزر أعلاه.",
+    "deleteConfirmTitle": "هل أنت متأكد؟",
+    "deleteConfirmDescription": "سيتم حذف المقال نهائياً. لا يمكن التراجع عن هذا الإجراء.",
+    "deleting": "جاري الحذف...",
+    "deleteSuccess": "تم حذف المقال بنجاح",
+    "deleteError": "حدث خطأ أثناء حذف المقال",
+    "deletePrompt": "هل تريد حذف هذا المقال؟",
+    "linkCopied": "تم نسخ الرابط إلى الحافظة",
+    "contextMenu": {
+      "open": "فتح",
+      "edit": "تعديل",
+      "share": "مشاركة",
+      "delete": "حذف"
     }
   }
 }

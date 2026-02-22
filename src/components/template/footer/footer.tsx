@@ -27,15 +27,14 @@ export function Footer({ lang, dictionary }: FooterProps) {
         <div className="flex flex-col md:flex-row gap-12 md:gap-10">
           {/* Logo & Description */}
           <div className="md:w-1/4">
-            <Link href={`/${lang}`} className="inline-flex items-center gap-3 mb-5">
+            <Link href={`/${lang}`} className="inline-block mb-5">
               <Image
                 src="/logo.webp"
                 alt="SPMA"
-                width={40}
-                height={40}
+                width={64}
+                height={64}
                 className="rounded-full"
               />
-              <span className="font-bold text-white text-lg">SPMA</span>
             </Link>
             <p className="text-sm text-white/70 leading-relaxed max-w-[280px]">
               {dictionary.footer.description}
@@ -71,12 +70,12 @@ export function Footer({ lang, dictionary }: FooterProps) {
               <ul className="space-y-3">
                 <li>
                   <Link href={`/${lang}/library`} className="text-sm text-white/70 hover:text-white transition-colors">
-                    {isAr ? "المكتبة" : "Library"}
+                    {dictionary.footer?.library ?? (isAr ? "المكتبة" : "Library")}
                   </Link>
                 </li>
                 <li>
                   <Link href={`/${lang}/knowledge`} className="text-sm text-white/70 hover:text-white transition-colors">
-                    {isAr ? "المعرفة" : "Knowledge"}
+                    {dictionary.footer?.knowledge ?? (isAr ? "المعرفة" : "Knowledge")}
                   </Link>
                 </li>
               </ul>

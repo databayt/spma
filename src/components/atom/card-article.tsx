@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/context-menu";
 import { Edit, Trash, Share, ExternalLink } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "@/lib/use-translations";
 
 interface ArticleItem {
   title: string;
@@ -41,6 +42,8 @@ export const ArticleHoverEffect = ({
 }: HoverEffectProps) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const router = useRouter();
+  const { t } = useTranslations();
+  const a = t.article;
 
   const handleEdit = (item: ArticleItem) => {
     if (item.id) {
@@ -123,40 +126,36 @@ export const ArticleHoverEffect = ({
             </div>
           </ContextMenuTrigger>
 
-          <ContextMenuContent className="text-right [direction:rtl]">
+          <ContextMenuContent>
             <ContextMenuItem
-              className="flex flex-row-reverse justify-start items-center text-right w-full pr-0"
               onClick={() => handleOpen(item.link)}
             >
-              <span className="flex-grow text-right">فتح</span>
-              <ExternalLink className="mr-2 flex-shrink-0" size={16} />
+              <ExternalLink className="me-2 flex-shrink-0" size={16} />
+              {a?.contextMenu?.open ?? "فتح"}
             </ContextMenuItem>
 
             <ContextMenuItem
-              className="flex flex-row-reverse justify-start items-center text-right w-full pr-0"
               onClick={() => handleEdit(item)}
             >
-              <span className="flex-grow text-right">تعديل</span>
-              <Edit className="mr-2 flex-shrink-0" size={16} />
+              <Edit className="me-2 flex-shrink-0" size={16} />
+              {a?.contextMenu?.edit ?? "تعديل"}
             </ContextMenuItem>
 
             <ContextMenuItem
-              className="flex flex-row-reverse justify-start items-center text-right w-full pr-0"
               onClick={() => handleShare(item)}
             >
-              <span className="flex-grow text-right">مشاركة</span>
-              <Share className="mr-2 flex-shrink-0" size={16} />
+              <Share className="me-2 flex-shrink-0" size={16} />
+              {a?.contextMenu?.share ?? "مشاركة"}
             </ContextMenuItem>
 
             <ContextMenuSeparator />
 
             <ContextMenuItem
-              className="flex flex-row-reverse justify-start items-center text-right w-full pr-0"
               onClick={() => handleDelete(item)}
               variant="destructive"
             >
-              <span className="flex-grow text-right">حذف</span>
-              <Trash className="mr-2 flex-shrink-0" size={16} />
+              <Trash className="me-2 flex-shrink-0" size={16} />
+              {a?.contextMenu?.delete ?? "حذف"}
             </ContextMenuItem>
           </ContextMenuContent>
         </ContextMenu>
@@ -196,7 +195,7 @@ const ArticleTitle = ({
   return (
     <h4
       className={cn(
-        "font-bold tracking-wide text-lg line-clamp-2 md:line-clamp-1 pl-8 md:pl-0",
+        "font-bold tracking-wide text-lg line-clamp-2 md:line-clamp-1 ps-8 md:ps-0",
         className,
       )}
     >

@@ -1071,6 +1071,8 @@ export interface Dictionary {
       placeholder: string
       button: string
     }
+    library?: string
+    knowledge?: string
   }
   docs?: {
     sidebar?: {
@@ -1168,6 +1170,36 @@ export interface Dictionary {
       creating?: string
       addBookToLibrary?: string
       actions?: string
+    }
+  }
+  article?: {
+    title: string
+    addArticle: string
+    editArticle: string
+    createArticle: string
+    updateArticle: string
+    addNewArticle: string
+    titlePlaceholder: string
+    descriptionPlaceholder: string
+    bodyPlaceholder: string
+    selectAuthor: string
+    imageRequired: string
+    unknownError: string
+    processing: string
+    goBack: string
+    noArticles: string
+    deleteConfirmTitle: string
+    deleteConfirmDescription: string
+    deleting: string
+    deleteSuccess: string
+    deleteError: string
+    deletePrompt: string
+    linkCopied: string
+    contextMenu: {
+      open: string
+      edit: string
+      share: string
+      delete: string
     }
   }
 }

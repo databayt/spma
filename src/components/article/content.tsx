@@ -23,9 +23,12 @@ import { deleteArticle } from "./action";
 import { Article, ArticleAction } from "./type";
 import { Loader2, Edit, Trash } from "lucide-react";
 import Image from "next/image";
+import { useTranslations } from "@/lib/use-translations";
 
 export function ArticleCard({ article }: { article: Article }) {
   const router = useRouter();
+  const { t } = useTranslations();
+  const a = t.article;
   const [showDeleteDialog, setShowDeleteDialog] = useState(false);
   const [isDeleting, setIsDeleting] = useState(false);
 
@@ -89,12 +92,12 @@ export function ArticleCard({ article }: { article: Article }) {
             article={article}
             trigger={
               <ContextMenuItem>
-                <Edit className="mr-2 h-4 w-4" /> Edit
+                <Edit className="me-2 h-4 w-4" /> Edit
               </ContextMenuItem>
             }
           />
           <ContextMenuItem onClick={() => handleAction("delete")}>
-            <Trash className="mr-2 h-4 w-4" /> Delete
+            <Trash className="me-2 h-4 w-4" /> Delete
           </ContextMenuItem>
         </ContextMenuContent>
       </ContextMenu>
@@ -102,14 +105,13 @@ export function ArticleCard({ article }: { article: Article }) {
       <AlertDialog open={showDeleteDialog} onOpenChange={setShowDeleteDialog}>
         <AlertDialogContent>
           <AlertDialogHeader>
-            <AlertDialogTitle>Are you sure?</AlertDialogTitle>
+            <AlertDialogTitle>{a?.deleteConfirmTitle ?? "Are you sure?"}</AlertDialogTitle>
             <AlertDialogDescription>
-              This will permanently delete the article &quot;{article.title}
-              &quot;. This action cannot be undone.
+              {a?.deleteConfirmDescription ?? `This will permanently delete the article "${article.title}". This action cannot be undone.`}
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
-            <AlertDialogCancel>Cancel</AlertDialogCancel>
+            <AlertDialogCancel>{t.common.cancel}</AlertDialogCancel>
             <AlertDialogAction
               onClick={handleDelete}
               disabled={isDeleting}
@@ -117,10 +119,10 @@ export function ArticleCard({ article }: { article: Article }) {
             >
               {isDeleting ? (
                 <>
-                  <Loader2 className="mr-2 h-4 w-4 animate-spin" /> Deleting...
+                  <Loader2 className="me-2 h-4 w-4 animate-spin" /> {a?.deleting ?? "Deleting..."}
                 </>
               ) : (
-                "Delete"
+                t.common.delete
               )}
             </AlertDialogAction>
           </AlertDialogFooter>
@@ -131,10 +133,13 @@ export function ArticleCard({ article }: { article: Article }) {
 }
 
 export function ArticleGrid({ articles }: { articles: Article[] }) {
+  const { t } = useTranslations();
+  const a = t.article;
+
   return (
     <div className="mt-6">
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-2xl font-semibold">All Articles</h2>
+        <h2 className="text-2xl font-semibold">{a?.title ?? "All Articles"}</h2>
         <CreateArticleButton />
       </div>
 
@@ -147,8 +152,7 @@ export function ArticleGrid({ articles }: { articles: Article[] }) {
       {articles.length === 0 && (
         <div className="text-center py-12">
           <p className="text-gray-500 dark:text-gray-400">
-            No articles found. Create your first article by clicking the button
-            above.
+            {a?.noArticles ?? "No articles found. Create your first article by clicking the button above."}
           </p>
         </div>
       )}
