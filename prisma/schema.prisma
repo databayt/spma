@@ -1,0 +1,59 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Article {
+  id          String   @id @default(cuid())
+  title       String
+  slug        String   @unique
+  description String
+  image       String
+  body        String
+  author      String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([slug])
+}
+
+model Book {
+  id              String         @id @default(cuid())
+  title           String
+  author          String
+  genre           String
+  rating          Float          @default(0)
+  coverUrl        String
+  coverColor      String         @default("#000000")
+  description     String
+  totalCopies     Int            @default(1)
+  availableCopies Int            @default(1)
+  videoUrl        String?
+  summary         String
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+  borrowRecords   BorrowRecord[]
+
+  @@index([genre])
+  @@index([createdAt])
+}
+
+model BorrowRecord {
+  id         String    @id @default(cuid())
+  userId     String
+  bookId     String
+  borrowDate DateTime  @default(now())
+  dueDate    DateTime
+  returnDate DateTime?
+  status     String    @default("BORROWED")
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+  book       Book      @relation(fields: [bookId], references: [id], onDelete: Cascade)
+
+  @@index([bookId])
+  @@index([userId])
+  @@index([status])
+}

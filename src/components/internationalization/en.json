@@ -1,0 +1,1641 @@
+{
+  "common": {
+    "appName": "Abdout",
+    "appNameShort": "SPMA",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "search": "Search",
+    "filter": "Filter",
+    "loading": "Loading...",
+    "noResults": "No results found",
+    "actions": "Actions",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "yes": "Yes",
+    "no": "No",
+    "all": "All",
+    "none": "None",
+    "required": "Required",
+    "optional": "Optional",
+    "success": "Success",
+    "error": "Error occurred",
+    "warning": "Warning",
+    "view": "View",
+    "select": "Select",
+    "createdAt": "Created",
+    "email": "Email",
+    "phone": "Phone",
+    "update": "Update",
+    "export": "Export",
+    "exportAsCsv": "Export as CSV",
+    "exportAsJson": "Export as JSON",
+    "reset": "Reset",
+    "clear": "Clear",
+    "columns": "Columns",
+    "sync": "Sync",
+    "syncing": "Syncing...",
+    "areYouSure": "Are you sure?",
+    "openMenu": "Open menu",
+    "viewAll": "View All"
+  },
+  "header": {
+    "services": "Services",
+    "blog": "Blog",
+    "about": "About",
+    "platform": "Platform",
+    "track": "Track",
+    "signUp": "Sign Up",
+    "login": "Login"
+  },
+  "navigation": {
+    "overview": "Overview",
+    "dashboard": "Dashboard",
+    "shipments": "Shipments",
+    "customs": "Customs",
+    "invoices": "Invoices",
+    "finance": "Finance",
+    "project": "Projects",
+    "task": "Tasks",
+    "customers": "Customers",
+    "settings": "Settings",
+    "users": "Users",
+    "logout": "Logout",
+    "help": "Help",
+    "inbox": "Inbox",
+    "userMenu": "User menu",
+    "notifications": "Notifications",
+    "messages": "Messages",
+    "menu": "Menu",
+    "toggleMenu": "Toggle Menu",
+    "toggleSidebar": "Toggle Sidebar",
+    "team": "Team"
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "name": "Name",
+    "forgotPassword": "Forgot password?",
+    "loginButton": "Sign In",
+    "invalidCredentials": "Invalid credentials",
+    "welcomeBack": "Welcome back",
+    "loginDescription": "Sign in to your account",
+    "signUp": "Sign Up",
+    "createAccount": "Create Account",
+    "signUpDescription": "Sign up to get started",
+    "dontHaveAccount": "Don't have an account?",
+    "alreadyHaveAccount": "Already have an account?",
+    "orContinueWith": "Or continue with",
+    "confirm": "Confirm",
+    "twoFactorCode": "Two-Factor Code",
+    "twoFactorDescription": "Enter the code sent to your email",
+    "resetPassword": "Reset Password",
+    "resetDescription": "Enter your email to receive reset instructions",
+    "newPassword": "New Password",
+    "newPasswordDescription": "Enter your new password",
+    "confirmPassword": "Confirm Password",
+    "sendResetLink": "Send Reset Link",
+    "backToLogin": "Back to login",
+    "confirmEmail": "Confirm Your Email",
+    "confirmEmailDescription": "Confirming your email address...",
+    "emailVerified": "Email verified! You can now login.",
+    "verifyingEmail": "Verifying your email...",
+    "enterEmail": "Enter your email",
+    "enterPassword": "Enter your password",
+    "enterName": "Enter your name",
+    "providers": {
+      "google": "Google",
+      "facebook": "Facebook"
+    },
+    "errors": {
+      "emailInUseProvider": "Email already in use with different provider!",
+      "somethingWrong": "Something went wrong!",
+      "emailNotVerified": "Please verify your email first",
+      "invalidCode": "Invalid code",
+      "expiredCode": "Code has expired",
+      "userNotFound": "User not found",
+      "invalidToken": "Invalid token",
+      "expiredToken": "Token has expired",
+      "passwordRequired": "Password is required"
+    },
+    "success": {
+      "emailSent": "Email sent! Check your inbox.",
+      "passwordReset": "Password updated successfully!",
+      "accountCreated": "Account created! Please check your email.",
+      "confirmationSent": "Confirmation email sent!"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "totalShipments": "Total Shipments",
+    "inTransit": "In Transit",
+    "pendingCustoms": "Pending Customs",
+    "pendingDeclarations": "Pending Declarations",
+    "unpaidInvoices": "Unpaid Invoices",
+    "recentShipments": "Recent Shipments",
+    "quickActions": "Quick Actions",
+    "newShipment": "New Shipment",
+    "newDeclaration": "New Declaration",
+    "newInvoice": "New Invoice",
+    "trendingUp": "Trending up this month",
+    "trendingDown": "Down this period",
+    "completionRate": "Completion Rate",
+    "clients": "Clients",
+    "shipment": "Shipment"
+  },
+  "shipments": {
+    "title": "Shipments",
+    "newShipment": "New Shipment",
+    "editShipment": "Edit Shipment",
+    "shipmentDetails": "Shipment Details",
+    "shipmentNumber": "Shipment Number",
+    "type": "Type",
+    "status": "Status",
+    "description": "Description",
+    "weight": "Weight",
+    "quantity": "Quantity",
+    "containerNumber": "Container Number",
+    "vesselName": "Vessel Name",
+    "consignor": "Consignor",
+    "consignee": "Consignee",
+    "arrivalDate": "Arrival Date",
+    "departureDate": "Departure Date",
+    "types": {
+      "IMPORT": "Import",
+      "EXPORT": "Export"
+    },
+    "statuses": {
+      "PENDING": "Pending",
+      "IN_TRANSIT": "In Transit",
+      "ARRIVED": "Arrived",
+      "CLEARED": "Cleared",
+      "DELIVERED": "Delivered"
+    },
+    "createSuccess": "Shipment created successfully",
+    "updateSuccess": "Shipment updated successfully",
+    "deleteSuccess": "Shipment deleted successfully"
+  },
+  "customs": {
+    "title": "Customs Declarations",
+    "newDeclaration": "New Declaration",
+    "editDeclaration": "Edit Declaration",
+    "declarationDetails": "Declaration Details",
+    "declarationNumber": "Declaration Number",
+    "hsCode": "HS Code",
+    "dutyAmount": "Duty Amount",
+    "taxAmount": "Tax Amount",
+    "currency": "Currency",
+    "documents": "Documents",
+    "uploadDocument": "Upload Document",
+    "approve": "Approve",
+    "reject": "Reject",
+    "submit": "Submit",
+    "statuses": {
+      "DRAFT": "Draft",
+      "SUBMITTED": "Submitted",
+      "UNDER_REVIEW": "Under Review",
+      "APPROVED": "Approved",
+      "REJECTED": "Rejected"
+    },
+    "documentTypes": {
+      "BILL_OF_LADING": "Bill of Lading",
+      "COMMERCIAL_INVOICE": "Commercial Invoice",
+      "PACKING_LIST": "Packing List",
+      "CERTIFICATE_OF_ORIGIN": "Certificate of Origin",
+      "INSURANCE_CERTIFICATE": "Insurance Certificate",
+      "OTHER": "Other"
+    }
+  },
+  "invoices": {
+    "title": "Invoices",
+    "description": "Manage and track your invoices",
+    "nav": {
+      "all": "All",
+      "invoices": "Invoices",
+      "settings": "Settings",
+      "templates": "Templates"
+    },
+    "settingsPage": {
+      "title": "Invoice Settings",
+      "companyInfo": "Company Information",
+      "branding": "Branding",
+      "logo": "Logo",
+      "signature": "Signature",
+      "bankDetails": "Bank Details",
+      "defaults": "Invoice Defaults",
+      "invoicePrefix": "Invoice Prefix",
+      "defaultCurrency": "Default Currency",
+      "taxRate": "Tax Rate",
+      "paymentTerms": "Payment Terms",
+      "terms": "Terms & Conditions"
+    },
+    "templatesPage": {
+      "title": "Invoice Templates",
+      "preview": "Preview",
+      "downloadPdf": "Download PDF",
+      "printTemplate": "Print Template",
+      "sampleInvoice": "Sample Invoice"
+    },
+    "newInvoice": "New Invoice",
+    "newInvoiceDescription": "Create a new invoice for your client",
+    "editInvoice": "Edit Invoice",
+    "editInvoiceDescription": "Update invoice details",
+    "invoiceDetails": "Invoice Details",
+    "details": "Invoice Details",
+    "invoiceNumber": "Invoice Number",
+    "subtotal": "Subtotal",
+    "tax": "Tax",
+    "total": "Total",
+    "dueDate": "Due Date",
+    "paidAt": "Paid At",
+    "lineItems": "Line Items",
+    "addItem": "Add Item",
+    "itemDescription": "Item Description",
+    "unitPrice": "Unit Price",
+    "notes": "Notes",
+    "downloadPdf": "Download PDF",
+    "print": "Print",
+    "sendEmail": "Send Email",
+    "sendEmailDescription": "Send invoice {invoiceNumber} via email",
+    "emailRecipient": "Recipient Email",
+    "emailMessage": "Message (Optional)",
+    "emailMessagePlaceholder": "Add a personal message...",
+    "confirmSend": "Send Invoice",
+    "sending": "Sending...",
+    "emailSent": "Invoice sent successfully!",
+    "clientInfo": "Client Information",
+    "companyInfo": "Company Information",
+    "taxId": "Tax ID",
+    "markAsPaid": "Mark as Paid",
+    "markAsSent": "Mark as Sent",
+    "cannotEditPaidCancelled": "Cannot edit paid or cancelled invoices",
+    "statuses": {
+      "DRAFT": "Draft",
+      "SENT": "Sent",
+      "PAID": "Paid",
+      "OVERDUE": "Overdue",
+      "CANCELLED": "Cancelled"
+    },
+    "currencies": {
+      "SDG": "Sudanese Pound",
+      "USD": "US Dollar",
+      "SAR": "Saudi Riyal"
+    },
+    "feeCategories": {
+      "DELIVERY_ORDER": "Delivery Order",
+      "CUSTOMS_DECLARATION": "Customs Declaration",
+      "CUSTOMS_DUTY_RECEIPT": "Customs Duty Receipt",
+      "INITIAL_PORT_INVOICE": "Initial Port Invoice",
+      "EXAMINATION": "Examination",
+      "QUALITY_STANDARDS": "Quality Standards (SSMO)",
+      "CUSTOMS_LABORATORY": "Customs Laboratory",
+      "MINISTRY_OF_TRADE": "Ministry of Trade Charges",
+      "CUSTOMS_SUPERVISION": "Customs Supervision",
+      "PORT_STORAGE_QUAY": "Port Storage & Quay",
+      "CONTAINER_MOVE": "Container Move",
+      "CRANE_HIRE": "Hire of Crane",
+      "STEVEDORING": "Stevedoring Charges",
+      "LABOURERS_WAGES": "Labourers Wages",
+      "CHECKERS_WAGES": "Checkers Wages",
+      "OVERTIME_CHARGES": "Overtime Charges",
+      "TRANSPORTATION": "Transportation",
+      "FUMIGATION": "Fumigation Fees",
+      "DEMURRAGE": "Demurrage Charges",
+      "STAMPS_FEES": "Stamps",
+      "HEALTH_FEES": "Health Fees",
+      "COMMISSION": "Commission",
+      "VAT": "VAT (17%)",
+      "OTHER": "Other Charges"
+    },
+    "invoiceTypes": {
+      "CLEARANCE": "Clearance Invoice",
+      "PROFORMA": "Proforma Invoice",
+      "STATEMENT": "Statement of Account",
+      "PORT": "Port Invoice"
+    },
+    "documentReferences": {
+      "blNumber": "B/L Number",
+      "containerNo": "Container No",
+      "deliveryOrderNo": "Delivery Order No",
+      "declarationNo": "Declaration No",
+      "vesselName": "Vessel Name",
+      "voyageNumber": "Voyage Number",
+      "commodityType": "Commodity",
+      "supplier": "Supplier"
+    },
+    "quickInvoice": {
+      "title": "Quick Invoice",
+      "createQuick": "Create Quick Invoice",
+      "selectShipment": "Select Shipment",
+      "feeTemplates": "Fee Templates",
+      "basicClearance": "Basic Clearance",
+      "fullClearance": "Full Clearance",
+      "portOnly": "Port Only",
+      "customsOnly": "Customs Only"
+    },
+    "statement": {
+      "title": "Statement of Account",
+      "periodStart": "Period Start",
+      "periodEnd": "Period End",
+      "openingBalance": "Opening Balance",
+      "closingBalance": "Closing Balance",
+      "totalDebits": "Total Debits",
+      "totalCredits": "Total Credits",
+      "amountInWords": "Amount in Words"
+    },
+    "whatsapp": {
+      "share": "Share via WhatsApp",
+      "phoneNumber": "Phone Number",
+      "messagePreview": "Message Preview",
+      "openWhatsApp": "Open WhatsApp"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "profile": "Profile",
+    "language": "Language",
+    "changePassword": "Change Password",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm Password",
+    "theme": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "toggleTheme": "Toggle theme"
+  },
+  "users": {
+    "title": "Users",
+    "newUser": "New User",
+    "editUser": "Edit User",
+    "name": "Name",
+    "email": "Email",
+    "role": "Role",
+    "roles": {
+      "ADMIN": "Admin",
+      "MANAGER": "Manager",
+      "CLERK": "Clerk",
+      "VIEWER": "Viewer"
+    }
+  },
+  "customer": {
+    "title": "Customers",
+    "newCustomer": "New Customer",
+    "editCustomer": "Edit Customer",
+    "companyName": "Company Name",
+    "contactName": "Contact Name",
+    "taxId": "Tax ID",
+    "address": "Address",
+    "billingAddress": "Billing Address",
+    "shippingAddress": "Shipping Address",
+    "isActive": "Status",
+    "active": "Active",
+    "inactive": "Inactive",
+    "invoiceCount": "Invoices",
+    "deleteConfirm": "Are you sure you want to delete this customer?"
+  },
+  "finance": {
+    "title": "Finance",
+    "dashboard": "Financial Dashboard",
+    "overview": "Financial Overview",
+    "totalRevenue": "Total Revenue",
+    "collectedRevenue": "Collected Revenue",
+    "outstandingPayments": "Outstanding Payments",
+    "outstandingRevenue": "Outstanding Revenue",
+    "paidThisMonth": "Paid This Month",
+    "totalExpenses": "Total Expenses",
+    "netProfit": "Net Profit",
+    "grossProfit": "Gross Profit",
+    "profitMargin": "Profit Margin",
+    "cashBalance": "Cash Balance",
+    "cashFlow": "Cash Flow",
+    "unpaidInvoices": "Unpaid Invoices",
+    "pendingPayments": "Pending Payments",
+    "overdueInvoices": "Overdue Invoices",
+    "collectionRate": "Collection Rate",
+    "revenueExpenses": "Revenue & Expenses",
+    "lastMonths": "Last 12 months",
+    "avgRevenue": "Avg Revenue",
+    "avgExpenses": "Avg Expenses",
+    "avgProfit": "Avg Profit",
+    "currentPeriod": "Current period",
+    "balance": "Balance",
+    "netFlow": "Net Flow",
+    "expenseBreakdown": "Expense Breakdown",
+    "byCategory": "By category",
+    "recentTransactions": "Recent Transactions",
+    "latestActivities": "Latest financial activities",
+    "viewAll": "View All",
+    "totalIncome": "Total Income",
+    "pending": "Pending",
+    "noTransactions": "No transactions found for this period",
+    "viewDetails": "View Details",
+    "retryExtraction": "Retry Extraction",
+    "statuses": {
+      "COMPLETED": "Completed",
+      "PENDING": "Pending",
+      "FAILED": "Failed",
+      "PROCESSING": "Processing",
+      "PROCESSED": "Processed",
+      "ERROR": "Error"
+    },
+    "columns": {
+      "fileName": "File Name",
+      "merchant": "Merchant",
+      "date": "Date",
+      "amount": "Amount",
+      "status": "Status",
+      "uploaded": "Uploaded"
+    },
+    "navigation": {
+      "overview": "Overview",
+      "dashboard": "Dashboard",
+      "invoice": "Invoices",
+      "banking": "Banking",
+      "fees": "Fees",
+      "salary": "Salary",
+      "payroll": "Payroll",
+      "reports": "Reports",
+      "receipt": "Receipts",
+      "timesheet": "Timesheet",
+      "wallet": "Wallet",
+      "budget": "Budget",
+      "expenses": "Expenses",
+      "accounts": "Accounts",
+      "myBanks": "My Banks",
+      "paymentTransfer": "Payment Transfer",
+      "transactionHistory": "Transaction History"
+    },
+    "banking": {
+      "title": "Banking",
+      "accounts": "Bank Accounts",
+      "addAccount": "Add Account",
+      "accountName": "Account Name",
+      "accountNumber": "Account Number",
+      "bankName": "Bank Name",
+      "bankBranch": "Branch",
+      "currentBalance": "Current Balance",
+      "availableBalance": "Available Balance",
+      "transactions": "Transactions",
+      "transfer": "Transfer",
+      "reconcile": "Reconcile",
+      "lastReconciled": "Last Reconciled",
+      "totalBalance": "Total Balance"
+    },
+    "expenses": {
+      "title": "Expenses",
+      "newExpense": "New Expense",
+      "editExpense": "Edit Expense",
+      "amount": "Amount",
+      "description": "Description",
+      "category": "Category",
+      "date": "Date",
+      "receipt": "Receipt",
+      "status": "Status",
+      "approve": "Approve",
+      "reject": "Reject",
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "paid": "Paid"
+    },
+    "payroll": {
+      "title": "Payroll",
+      "runPayroll": "Run Payroll",
+      "period": "Period",
+      "totalGross": "Total Gross",
+      "totalDeductions": "Total Deductions",
+      "totalNet": "Total Net",
+      "employees": "Employees",
+      "approve": "Approve Payroll",
+      "process": "Process Payment"
+    },
+    "budget": {
+      "title": "Budget",
+      "newBudget": "New Budget",
+      "fiscalYear": "Fiscal Year",
+      "allocated": "Allocated",
+      "spent": "Spent",
+      "remaining": "Remaining",
+      "variance": "Variance"
+    },
+    "reports": {
+      "title": "Financial Reports",
+      "profitLoss": "Profit & Loss",
+      "balanceSheet": "Balance Sheet",
+      "cashFlowStatement": "Cash Flow Statement",
+      "trialBalance": "Trial Balance",
+      "generate": "Generate Report",
+      "export": "Export",
+      "period": "Report Period"
+    },
+    "invoice": {
+      "title": "Invoices",
+      "newInvoice": "New Invoice",
+      "invoiceNumber": "Invoice #",
+      "client": "Client",
+      "amount": "Amount",
+      "dueDate": "Due Date",
+      "status": "Status",
+      "draft": "Draft",
+      "sent": "Sent",
+      "paid": "Paid",
+      "overdue": "Overdue",
+      "cancelled": "Cancelled"
+    },
+    "actions": {
+      "createInvoice": "Create Invoice",
+      "recordPayment": "Record Payment",
+      "submitExpense": "Submit Expense",
+      "runPayroll": "Run Payroll",
+      "viewReports": "View Reports",
+      "reconcile": "Reconcile"
+    },
+    "alerts": {
+      "overdueInvoices": "Overdue Invoices",
+      "lowCashReserve": "Low Cash Reserve",
+      "pendingPayroll": "Payroll Pending Approval",
+      "pendingExpenses": "Expenses Pending Approval"
+    },
+    "currency": {
+      "sdg": "SDG",
+      "usd": "USD",
+      "eur": "EUR",
+      "sar": "SAR"
+    },
+    "totalBalance": "Total Balance",
+    "allAccounts": "All accounts",
+    "paid": "Paid",
+    "pendingPayroll": "Pending Payroll",
+    "needApproval": "Need approval",
+    "activeEmployees": "Active Employees",
+    "employees": "Employees",
+    "viewAccounts": "View Accounts",
+    "viewPayroll": "View Payroll",
+    "viewExpenses": "View Expenses",
+    "customsFees": "Customs Fees",
+    "viewFees": "View Fees",
+    "addBankAccount": "Add Bank Account",
+    "manageAccounts": "Manage accounts",
+    "processPayroll": "Process Payroll",
+    "monthlyPayroll": "Monthly payroll",
+    "addExpense": "Add Expense",
+    "trackExpenses": "Track expenses",
+    "generateReport": "Generate Report",
+    "financialReports": "Financial reports",
+    "receipt": {
+      "fileName": "File Name",
+      "merchant": "Merchant",
+      "date": "Date",
+      "amount": "Amount",
+      "status": "Status",
+      "uploaded": "Uploaded",
+      "viewDetails": "View Details",
+      "retryExtraction": "Retry Extraction",
+      "statuses": {
+        "pending": "Pending",
+        "processing": "Processing",
+        "processed": "Processed",
+        "error": "Error"
+      }
+    }
+  },
+  "project": {
+    "title": "Projects",
+    "newProject": "New Project",
+    "editProject": "Edit Project",
+    "customer": "Customer",
+    "blAwbNumber": "BL/AWB Number",
+    "portOfOrigin": "Port of Origin",
+    "portOfDestination": "Port of Destination",
+    "teamLead": "Team Lead",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "nav": {
+      "all": "All"
+    },
+    "statuses": {
+      "PENDING": "Pending",
+      "IN_PROGRESS": "In Progress",
+      "CUSTOMS_HOLD": "Customs Hold",
+      "RELEASED": "Released",
+      "DELIVERED": "Delivered"
+    }
+  },
+  "task": {
+    "title": "Tasks",
+    "task": "Task",
+    "project": "Project",
+    "stage": "Stage",
+    "team": "Team",
+    "status": "Status",
+    "priority": "Priority",
+    "remarks": "Remarks",
+    "hours": "hr",
+    "manual": "Manual",
+    "newTask": "New Task",
+    "editTask": "Edit Task",
+    "taskName": "Task Name",
+    "projectRef": "Project",
+    "description": "Description",
+    "duration": "Duration",
+    "assignedTo": "Assigned To",
+    "dueDate": "Due Date",
+    "fetchError": "Failed to fetch tasks",
+    "syncError": "Failed to sync projects with tasks",
+    "syncCompleted": "Sync completed",
+    "syncing": "Syncing...",
+    "syncWithProjects": "Sync with Projects",
+    "searchPlaceholder": "Search by task name...",
+    "filterOptions": "Filter Options",
+    "general": "General",
+    "date": "Date",
+    "pickDate": "Pick a date",
+    "loadingProjects": "Loading projects...",
+    "selectProject": "Select project",
+    "searchProjects": "Search projects...",
+    "noProjectFound": "No project found.",
+    "assignTeamMembers": "Assign team members",
+    "searchTeamMembers": "Search team members...",
+    "noMemberFound": "No member found.",
+    "creatingTask": "Creating Task...",
+    "updatingTask": "Updating Task...",
+    "createTask": "Create Task",
+    "updateTask": "Update Task",
+    "enterTaskName": "Enter task name",
+    "enterTaskDescription": "Enter task description",
+    "taskDescription": "Task Description",
+    "selectStatus": "Select status",
+    "selectPriority": "Select priority",
+    "taskCreatedSuccess": "Task created successfully",
+    "taskUpdatedSuccess": "Task updated successfully",
+    "taskDeletedSuccess": "Task deleted successfully",
+    "deleteTask": "Delete Task",
+    "deleteConfirmation": "Are you sure you want to delete this task? This action cannot be undone.",
+    "deleting": "Deleting...",
+    "estimatedTime": "Estimated Time",
+    "nav": {
+      "all": "All",
+      "pending": "Pending",
+      "inProgress": "In Progress",
+      "done": "Done"
+    },
+    "statuses": {
+      "PENDING": "Pending",
+      "STUCK": "Stuck",
+      "IN_PROGRESS": "In Progress",
+      "DONE": "Done",
+      "CANCELLED": "Cancelled"
+    },
+    "priorities": {
+      "URGENT": "Urgent",
+      "HIGH": "High",
+      "MEDIUM": "Medium",
+      "LOW": "Low",
+      "NEUTRAL": "Neutral"
+    },
+    "notFound": "Task not found",
+    "returnToList": "Return to task list",
+    "noDescription": "No description provided",
+    "details": "Details",
+    "overtime": "Overtime",
+    "system": "System",
+    "category": "Category",
+    "noRemarks": "No remarks",
+    "linkedActivities": "Linked Activities",
+    "subcategory": "Subcategory",
+    "activity": "Activity",
+    "documentation": "Documentation",
+    "documentationDesc": "Reference materials, guides and reports for this task",
+    "noTeamMembers": "No team members assigned",
+    "lastUpdated": "Last Updated",
+    "unknown": "Unknown",
+    "notSet": "Not set",
+    "deleteSuccess": "Task deleted successfully",
+    "deleteError": "Failed to delete task",
+    "document": "Document",
+    "docs": {
+      "manuals": "Manuals",
+      "mos": "Method of Statement",
+      "reports": "Reports"
+    }
+  },
+  "team": {
+    "title": "Team",
+    "description": "Manage your team members",
+    "addMember": "Add Member",
+    "editMember": "Edit Member",
+    "member": "Member",
+    "name": "Name",
+    "email": "Email",
+    "role": "Role",
+    "status": "Status",
+    "phone": "Phone",
+    "department": "Department",
+    "joinedAt": "Joined",
+    "active": "Active",
+    "inactive": "Inactive",
+    "searchPlaceholder": "Search team members...",
+    "filterByRole": "Filter by role",
+    "filterByStatus": "Filter by status",
+    "noResults": "No team members found",
+    "actions": "Actions",
+    "copyEmail": "Copy Email",
+    "changeRole": "Change Role",
+    "deactivate": "Deactivate",
+    "activate": "Activate",
+    "nav": {
+      "all": "All",
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "columns": {
+      "name": "Name",
+      "email": "Email",
+      "role": "Role",
+      "phone": "Phone",
+      "status": "Status",
+      "department": "Department",
+      "joinedAt": "Joined",
+      "actions": "Actions"
+    },
+    "statuses": {
+      "ACTIVE": "Active",
+      "INACTIVE": "Inactive"
+    },
+    "roles": {
+      "ADMIN": "Admin",
+      "MANAGER": "Manager",
+      "CLERK": "Clerk",
+      "VIEWER": "Viewer"
+    }
+  },
+  "validation": {
+    "required": "This field is required",
+    "invalidEmail": "Invalid email address",
+    "minLength": "Must be at least {min} characters",
+    "maxLength": "Must not exceed {max} characters",
+    "invalidNumber": "Must be a valid number",
+    "positiveNumber": "Must be a positive number"
+  },
+  "about": {
+    "sections": {
+      "who": {
+        "subtitle": "W h o   W e   A r e",
+        "title": "Who We Are",
+        "description": "Established in 1985, Abdout was founded with the goal of supporting and developing the local community by providing exceptional customs clearance and logistics services that enhance trade efficiency and meet business needs transparently. Since our establishment, we have been committed to building a service system based on reliability, expertise, and sustainable business practices."
+      },
+      "why": {
+        "subtitle": "W h y   U s",
+        "title": "Why Us",
+        "description": "We believe that efficient logistics is the foundation for successful trade. With our dedication to offering high-quality services that reflect the aspirations of businesses, we meet growing needs efficiently. Our commitment to transparency, professional values, and sustainable practices makes us the trusted choice for customs clearance services in Port Sudan."
+      },
+      "mission": {
+        "subtitle": "O u r   M i s s i o n",
+        "title": "Our Vision and Mission",
+        "description": "To provide an effective logistics environment that supports businesses, offers reliable services, and launches developmental initiatives and strategic partnerships that enhance trade efficiency and economic growth. We strive to be the leading customs clearance company that promotes seamless international trade."
+      }
+    },
+    "goals": [
+      {
+        "title": "Business Support",
+        "description": "Building strong business relationships through reliable services that support importers and exporters in achieving their goals."
+      },
+      {
+        "title": "Quality Services",
+        "description": "Delivering reliable, high-quality customs clearance and logistics services that meet the evolving needs of our clients with transparency and efficiency."
+      },
+      {
+        "title": "Sustainable Growth",
+        "description": "Implementing sustainable business practices that ensure long-term growth and prosperity for our company and clients."
+      }
+    ],
+    "boardOfDirectors": {
+      "subtitle": "O u r   L e a d e r s h i p",
+      "title": "Board of Directors",
+      "titleMobileLine1": "",
+      "titleMobileLine2": "",
+      "description": "Meet our dedicated team members who guide Abdout with their expertise and commitment to excellence.",
+      "members": [
+        { "name": "Mazin Abdout", "position": "CEO" },
+        { "name": "Sami Dirar", "position": "COO" },
+        { "name": "William Parker", "position": "CTO" },
+        { "name": "David Mitchell", "position": "CFO" },
+        { "name": "James Wilson", "position": "CMO" },
+        { "name": "Robert Chen", "position": "CPO" },
+        { "name": "Michael Brown", "position": "CLO" },
+        { "name": "Thomas Anderson", "position": "CSO" }
+      ]
+    }
+  },
+  "marketing": {
+    "hero": {
+      "badge": "CUSTOMS CLEARANCE SERVICES",
+      "titleLine1": "Precision in",
+      "titleLine2": "Every Shipment",
+      "titleMobileLine1": "Precision",
+      "titleMobileLine2": "in Every",
+      "titleMobileLine3": "Shipment",
+      "subtitle": "Streamline your import and export operations with our integrated digital platform, real-time tracking, and expert customs clearance team in Port Sudan.",
+      "cta": "Get Started",
+      "trackPlaceholder": "Enter tracking number",
+      "trackButton": "Track"
+    },
+    "partners": {
+      "title": "Trusted by leading shipping companies"
+    },
+    "testimonial": {
+      "quote": "Abdout transformed how we handle shipments. Real-time tracking and automated alerts have made our operations incredibly smooth and efficient.",
+      "author": "Ahmed Hassan",
+      "role": "Import Manager, Sudan Trading Co."
+    },
+    "solutions": {
+      "badge": "OUR SOLUTIONS",
+      "title": "Logistics Solutions That Move you Forward",
+      "subtitle": "Comprehensive customs clearance and logistics services designed to streamline your operations.",
+      "items": {
+        "realTime": {
+          "title": "Real-Time Tracking",
+          "description": "Monitor your shipments status 24/7 with live updates and notifications."
+        },
+        "analytics": {
+          "title": "Smart Analytics",
+          "description": "Data-driven insights to optimize your supply chain and reduce costs."
+        },
+        "automated": {
+          "title": "Automated Alerts",
+          "description": "Stay informed with instant notifications on shipment milestones."
+        },
+        "multiCarrier": {
+          "title": "Multi-Carrier Support",
+          "description": "Seamless integration with major shipping lines and carriers."
+        },
+        "customs": {
+          "title": "Customs Processing",
+          "description": "Expert handling of all customs documentation and procedures."
+        },
+        "warehouse": {
+          "title": "Warehouse Management",
+          "description": "Secure storage with complete inventory tracking and control."
+        }
+      }
+    },
+    "allInOne": {
+      "badge": "COMPLETE SOLUTION",
+      "title": "All-in-One Freight and Logistics System",
+      "subtitle": "Experience seamless cargo management with our comprehensive platform that handles everything from customs clearance to final delivery.",
+      "features": {
+        "documentation": {
+          "title": "Complete Documentation",
+          "description": "Digital customs documentation with secure cloud storage, quick retrieval, and automated compliance verification"
+        },
+        "tracking": {
+          "title": "Real-Time Tracking",
+          "description": "Monitor shipment status with live updates and automated notifications"
+        },
+        "invoicing": {
+          "title": "Multi-Currency Invoicing",
+          "description": "Flexible multi-currency invoicing with automated duty calculations and seamless payment processing"
+        },
+        "access": {
+          "title": "Team Access Control",
+          "description": "Role-based permissions for secure team collaboration and management"
+        }
+      },
+      "tags": {
+        "control": "Control",
+        "ops": "Ops",
+        "cost": "Cost",
+        "efficiency": "Efficiency",
+        "speed": "Speed",
+        "accuracy": "Accuracy"
+      }
+    },
+    "insights": {
+      "badge": "BLOG",
+      "title": "Latest Insights and Trends",
+      "viewAll": "See more",
+      "articles": {
+        "sudan-customs-digital-system": {
+          "category": "News",
+          "title": "Sudan Customs Goes Digital",
+          "description": "Sudan Customs Authority signed a landmark agreement with Substansible for an Advanced Cargo Declaration System. Director General Lt. Gen. Salah Ahmed Ibrahim confirmed the system enables pre-loading cargo verification and prevents non-compliant goods from entering.",
+          "content": "Sudan Customs Authority signed a landmark agreement with Substansible for an Advanced Cargo Declaration System. Director General Lt. Gen. Salah Ahmed Ibrahim confirmed the system enables pre-loading cargo verification and prevents non-compliant goods from entering. This digital integration aligns with international trade standards and marks a significant step toward modernizing Sudan's customs infrastructure.",
+          "date": "October 15, 2025"
+        },
+        "red-sea-shipping-crisis": {
+          "category": "Industry",
+          "title": "Red Sea Shipping Crisis Impact",
+          "description": "Houthi attacks have disrupted 10% of global seaborne trade, forcing ships to reroute around Africa. Aid shipments to Port Sudan now take months instead of weeks. Despite a May 2025 ceasefire, attacks resumed in July.",
+          "content": "Houthi attacks have disrupted 10% of global seaborne trade, forcing ships to reroute around Africa. Aid shipments to Port Sudan now take months instead of weeks. Despite a May 2025 ceasefire, attacks resumed in July. Maersk completed its first test transit in December 2025, signaling cautious optimism for the future of Red Sea shipping lanes.",
+          "date": "December 20, 2025"
+        },
+        "port-sudan-operations-update": {
+          "category": "News",
+          "title": "Port Sudan Operations Update",
+          "description": "Despite ongoing conflict, Port Sudan maintains operations. Container terminal resumed service in May 2025, and bulk cargo including wheat arrives regularly. Bank closures create documentation challenges.",
+          "content": "Despite ongoing conflict, Port Sudan maintains operations. Container terminal resumed service in May 2025, and bulk cargo including wheat arrives regularly. Bank closures create documentation challenges, but workarounds keep trade flowing through this critical Red Sea gateway. The port remains a vital lifeline for humanitarian aid and commercial goods.",
+          "date": "December 18, 2025"
+        },
+        "africa-single-window-revolution": {
+          "category": "Industry",
+          "title": "Africa's Single Window Revolution",
+          "description": "African nations are modernizing customs through ASYCUDA technology. The Gambia saw 23% revenue increase after implementation. Cloud-based systems connect government agencies on a single platform.",
+          "content": "African nations are modernizing customs through ASYCUDA technology. The Gambia saw 23% revenue increase after implementation. Cloud-based systems connect government agencies on a single platform, reducing clearance times and costs for traders across the continent. This digital transformation is reshaping how Africa trades.",
+          "date": "November 25, 2025"
+        },
+        "customs-automation-trends-2025": {
+          "category": "Guide",
+          "title": "2025 Customs Automation Trends",
+          "description": "AI-powered document verification and automated customs declarations are transforming border processing. Green corridors for trusted traders reduce wait times significantly.",
+          "content": "AI-powered document verification and automated customs declarations are transforming border processing. Green corridors for trusted traders reduce wait times. Digital customs integration enables data-driven decisions and ensures secure, transparent trade systems. These technologies are setting new standards for international trade.",
+          "date": "January 7, 2025"
+        },
+        "sudan-pre-shipment-verification-guide": {
+          "category": "Guide",
+          "title": "Pre-Shipment Verification Guide",
+          "description": "Sudan's SSMO requires a Certificate of Inspection (CoI) for regulated products. Working with TUV Rheinland, exporters can ensure compliance with national and international standards.",
+          "content": "Sudan's SSMO requires a Certificate of Inspection (CoI) for regulated products. Working with TUV Rheinland, exporters can ensure compliance with national and international standards before shipment, facilitating smooth customs clearance at Sudanese ports. This guide covers the essential steps for successful verification.",
+          "date": "December 1, 2025"
+        },
+        "sudan-afcfta-path-forward": {
+          "category": "News",
+          "title": "Sudan & AfCFTA: The Path Forward",
+          "description": "Sudan remains a non-state party to the African Continental Free Trade Area. Ratification would open preferential trade access to 54 African nations.",
+          "content": "Sudan remains a non-state party to the African Continental Free Trade Area. Ratification would open preferential trade access to 54 African nations. As 11 countries now actively trade under AfCFTA rules, pressure grows for non-members to join. The potential benefits for Sudan's economy could be substantial.",
+          "date": "November 10, 2025"
+        },
+        "gulf-ports-technology-innovation": {
+          "category": "Industry",
+          "title": "Gulf Ports Lead Technology Innovation",
+          "description": "GCC ports are investing $110 billion by 2030 in smart logistics. Jebel Ali sets cargo records while Hamad Port leads in automation.",
+          "content": "GCC ports are investing $110 billion by 2030 in smart logistics. Jebel Ali sets cargo records while Hamad Port leads in automation. Fujairah's new MarHub platform integrates vessel calls, security, and analytics. The region is becoming a global maritime tech leader, setting examples for ports worldwide.",
+          "date": "December 5, 2025"
+        },
+        "smart-ports-global-trade": {
+          "category": "Guide",
+          "title": "Smart Ports Shaping Global Trade",
+          "description": "IoT sensors, AI scheduling, and blockchain tracking are revolutionizing port operations. Automated container handling and real-time cargo visibility help ports manage disruptions.",
+          "content": "IoT sensors, AI scheduling, and blockchain tracking are revolutionizing port operations. Automated container handling and real-time cargo visibility help ports manage disruptions. These technologies offer a roadmap for emerging market ports seeking efficiency gains and competitive advantages in global trade.",
+          "date": "December 10, 2025"
+        }
+      }
+    },
+    "blog": {
+      "title": "Blog & Insights",
+      "subtitle": "Stay updated with the latest news, industry trends, and expert guides on customs clearance and international trade.",
+      "allCategories": "All",
+      "categoryNews": "News",
+      "categoryIndustry": "Industry",
+      "categoryGuide": "Guide",
+      "readMore": "Read more",
+      "backToBlog": "Back to Blog",
+      "relatedArticles": "Related Articles",
+      "source": "Source"
+    },
+    "services": {
+      "badge": "OUR SERVICE",
+      "title": "Logistics Solutions That Move you Forward",
+      "subtitle": "Ensure every delivery is accurate, on time, and fully optimized with intelligent logistics and real-time tracking.",
+      "items": {
+        "sea": {
+          "type": "SEA",
+          "tag1": "Cost-effective",
+          "tag2": "Bulk Transport",
+          "title": "Maritime Shipping",
+          "description": "Optimized sea-based logistics with real-time tracking and seamless coordination."
+        },
+        "air": {
+          "type": "AIR",
+          "tag1": "Global Reach",
+          "tag2": "High Security",
+          "title": "Aerial Cargo",
+          "description": "Fast, secure air logistics powered by intelligent routing and cloud integration."
+        },
+        "ground": {
+          "type": "GROUND",
+          "tag1": "Flexible",
+          "tag2": "Real-time Tracking",
+          "title": "Ground Transport",
+          "description": "Reliable land-based delivery with smart scheduling and route optimization tools."
+        }
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "titleMobile": "FAQ",
+      "subtitle": "Your guide to our services and plans.",
+      "items": {
+        "q1": {
+          "question": "What's included in the One Project plan?",
+          "answer": "The One Project plan includes complete custom development for a single automation solution, including consultation, development, testing, and deployment."
+        },
+        "q2": {
+          "question": "How does the hourly billing work for Strategic Partner?",
+          "answer": "With Strategic Partner, you get access to our development team at $10/hour. Perfect for ongoing projects, maintenance, or when you need flexible development resources."
+        },
+        "q3": {
+          "question": "Can I switch between plans?",
+          "answer": "Yes, you can upgrade or downgrade your plan at any time. Changes will be reflected in your next billing cycle."
+        },
+        "q4": {
+          "question": "Do you offer enterprise solutions?",
+          "answer": "Absolutely! For enterprise needs, we offer custom solutions with dedicated teams, SLAs, and specialized support. Contact us for a tailored quote."
+        },
+        "q5": {
+          "question": "What support is included?",
+          "answer": "All plans include email support. Higher tiers get priority response times and dedicated account managers for seamless communication."
+        }
+      }
+    },
+    "footer": {
+      "description": "Your trusted partner for customs clearance and logistics services in Port Sudan. Fast, reliable, and transparent.",
+      "quickLinks": "Quick Links",
+      "services": "Services",
+      "contact": "Contact",
+      "company": "Company",
+      "support": "Support",
+      "copyright": "All rights reserved.",
+      "readyToGetStarted": "Ready to Get Started?",
+      "newsletter": {
+        "title": "Subscribe to Newsletter",
+        "description": "Stay updated with the latest news and offers.",
+        "placeholder": "Enter your email",
+        "button": "Subscribe"
+      },
+      "links": {
+        "home": "Home",
+        "features": "Features",
+        "tracking": "Tracking",
+        "solutions": "Solutions",
+        "pricing": "Pricing",
+        "import": "Import Clearance",
+        "export": "Export Clearance",
+        "warehouse": "Warehousing",
+        "transport": "Transportation",
+        "about": "About",
+        "careers": "Careers",
+        "blog": "Blog",
+        "helpCenter": "Help Center",
+        "documentation": "Documentation",
+        "status": "Status"
+      },
+      "contactInfo": {
+        "address": "Port Sudan, Red Sea State, Sudan",
+        "phone": "+249 123 456 789",
+        "email": "info@mazin.sd"
+      }
+    },
+    "numbers": {
+      "company": "Company",
+      "inNumbers": "In numbers",
+      "projects": "PROJECT",
+      "experts": "EXPERT",
+      "awards": "AWARDS",
+      "satisfied": "SATISFIED"
+    },
+    "gas": {
+      "subtitle": "Next-Generation Shipping",
+      "title": "3GS Container Solutions",
+      "description": "Experience the future of global logistics with our intelligent container management system. From port to destination, we ensure your cargo travels safely and efficiently.",
+      "features": {
+        "global": {
+          "title": "Global Reach",
+          "description": "Seamless logistics across 150+ countries with real-time tracking"
+        },
+        "smart": {
+          "title": "Smart Containers",
+          "description": "IoT-enabled containers with temperature and humidity monitoring"
+        },
+        "fast": {
+          "title": "Fast Clearance",
+          "description": "Automated customs processing reduces delays by 70%"
+        }
+      },
+      "stats": {
+        "containers": "50K+",
+        "containersLabel": "Containers Shipped",
+        "delivery": "99.8%",
+        "deliveryLabel": "On-Time Delivery"
+      },
+      "cta": "Explore Our Fleet"
+    },
+    "servicesPage": {
+      "hero": {
+        "badge": "OUR SERVICES",
+        "title": "Comprehensive Logistics Solutions",
+        "subtitle": "From documentation to delivery, we handle every step of your customs clearance journey with precision and expertise."
+      },
+      "overview": {
+        "badge": "WHAT WE OFFER",
+        "title": "End-to-End Logistics Services",
+        "subtitle": "Professional customs clearance and freight forwarding services tailored to your business needs."
+      },
+      "serviceDetails": {
+        "sea": {
+          "title": "Maritime Shipping",
+          "description": "Cost-effective ocean freight solutions for bulk cargo and container shipments.",
+          "features": [
+            "Full Container Load (FCL) Services",
+            "Less than Container Load (LCL) Options",
+            "Port-to-Port and Door-to-Door Delivery",
+            "Temperature-Controlled Containers",
+            "Real-time Vessel Tracking"
+          ]
+        },
+        "air": {
+          "title": "Air Freight",
+          "description": "Fast, secure air cargo services for time-sensitive shipments worldwide.",
+          "features": [
+            "Express Air Freight",
+            "Charter Services Available",
+            "Dangerous Goods Handling",
+            "Airport-to-Airport Delivery",
+            "Priority Customs Clearance"
+          ]
+        },
+        "ground": {
+          "title": "Ground Transport",
+          "description": "Reliable land transportation connecting ports to final destinations.",
+          "features": [
+            "Truck Load (TL) Services",
+            "Last Mile Delivery",
+            "Cross-Border Transportation",
+            "GPS Fleet Tracking",
+            "Flexible Scheduling"
+          ]
+        }
+      },
+      "process": {
+        "badge": "HOW IT WORKS",
+        "title": "Our Clearance Process",
+        "subtitle": "A streamlined 7-step process ensuring smooth customs clearance.",
+        "steps": [
+          {
+            "number": "01",
+            "title": "Document Submission",
+            "description": "Submit your shipping documents through our digital platform or in person."
+          },
+          {
+            "number": "02",
+            "title": "Document Verification",
+            "description": "Our experts verify all documents for compliance and accuracy."
+          },
+          {
+            "number": "03",
+            "title": "Customs Declaration",
+            "description": "We prepare and file your customs declaration with authorities."
+          },
+          {
+            "number": "04",
+            "title": "Duty Assessment",
+            "description": "Calculation of applicable duties, taxes, and fees."
+          },
+          {
+            "number": "05",
+            "title": "Payment Processing",
+            "description": "Secure payment handling for all customs charges."
+          },
+          {
+            "number": "06",
+            "title": "Inspection",
+            "description": "Coordination with authorities for any required inspections."
+          },
+          {
+            "number": "07",
+            "title": "Release & Delivery",
+            "description": "Cargo release and arrangement of final delivery."
+          }
+        ]
+      },
+      "advantages": {
+        "badge": "WHY CHOOSE US",
+        "title": "Our Competitive Advantages",
+        "subtitle": "What sets Abdout apart in customs clearance services.",
+        "items": [
+          {
+            "title": "Expert Team",
+            "description": "Licensed customs brokers with decades of experience in Port Sudan."
+          },
+          {
+            "title": "Fast Processing",
+            "description": "Expedited clearance through established relationships with authorities."
+          },
+          {
+            "title": "Transparent Pricing",
+            "description": "No hidden fees. Clear, upfront pricing for all services."
+          },
+          {
+            "title": "Real-time Tracking",
+            "description": "Monitor your shipment status 24/7 through our digital platform."
+          },
+          {
+            "title": "24/7 Support",
+            "description": "Round-the-clock customer support for urgent queries."
+          }
+        ]
+      },
+      "stats": {
+        "years": "39",
+        "yearsLabel": "Years Experience",
+        "shipments": "50K+",
+        "shipmentsLabel": "Shipments Cleared",
+        "clients": "2K+",
+        "clientsLabel": "Happy Clients",
+        "rate": "99%",
+        "rateLabel": "Success Rate"
+      },
+      "cta": {
+        "title": "Ready to Ship?",
+        "subtitle": "Get started with your customs clearance today.",
+        "quoteButton": "Request Quote",
+        "trackButton": "Track Shipment"
+      }
+    }
+  },
+  "chatbot": {
+    "openChat": "Open chat",
+    "closeChat": "Close chat",
+    "placeholder": "Ask about customs clearance...",
+    "welcomeMessage": "Hello! I'm here to help with customs clearance and import/export inquiries. How can I assist you today?",
+    "noMessages": "No messages yet. Start a conversation!",
+    "errorMessage": "Sorry, something went wrong. Please try again.",
+    "typing": "Typing...",
+    "send": "Send",
+    "sendMessage": "Send message",
+    "voiceInput": "Voice input",
+    "retry": "Retry",
+    "chooseQuestion": "Choose a question or type your message",
+    "speechNotSupported": "Speech recognition is not supported in your browser.",
+    "speechError": "Speech recognition error. Please try again.",
+    "quickActions": {
+      "track": "Track",
+      "trackQuestion": "I want to track my shipment",
+      "rates": "Documents",
+      "ratesQuestion": "What documents do I need for customs clearance?",
+      "delivery": "Timeline",
+      "deliveryQuestion": "How long does the clearance process take?",
+      "contact": "Quote",
+      "contactQuestion": "I need a quote for customs clearance"
+    }
+  },
+  "table": {
+    "of": "of",
+    "rowsSelected": "row(s) selected",
+    "rowsPerPage": "Rows per page",
+    "page": "Page",
+    "noResults": "No results.",
+    "asc": "Asc",
+    "desc": "Desc",
+    "reset": "Reset",
+    "hide": "Hide",
+    "toggleColumns": "Toggle columns",
+    "view": "View",
+    "searchColumns": "Search columns...",
+    "noColumnsFound": "No columns found.",
+    "clearFilters": "Clear filters",
+    "selected": "selected",
+    "noResultsFound": "No results found.",
+    "loadMore": "Load More",
+    "loading": "Loading...",
+    "search": "Search...",
+    "all": "All",
+    "openMenu": "Open menu",
+    "goToFirstPage": "Go to first page",
+    "goToPreviousPage": "Go to previous page",
+    "goToNextPage": "Go to next page",
+    "goToLastPage": "Go to last page"
+  },
+  "tracking": {
+    "title": "Track Shipment",
+    "publicTitle": "Track Your Shipment",
+    "publicSubtitle": "Enter your tracking number to see real-time updates on your shipment status",
+    "seaTracking": "Sea Tracking",
+    "seaTrackingDesc": "Track your containers from port to port",
+    "landTracking": "Land Tracking",
+    "landTrackingDesc": "Track your ground shipments to delivery",
+    "liveUpdates": "Live Updates",
+    "liveUpdatesDesc": "Get real-time status updates",
+    "demoNumbers": "Demo Tracking Numbers",
+    "demoNumbersDesc": "Try these numbers to explore the tracking system",
+    "enterNumber": "Enter tracking number",
+    "trackButton": "Track",
+    "notFound": "Shipment not found",
+    "invalidNumber": "Invalid tracking number",
+    "currentStatus": "Current Status",
+    "estimatedDelivery": "Estimated Delivery",
+    "lastUpdated": "Last Updated",
+    "progress": "Progress",
+    "shipmentInfo": "Shipment Information",
+    "trackingNumber": "Tracking Number",
+    "vesselName": "Vessel Name",
+    "containerNumber": "Container Number",
+    "consignee": "Consignee",
+    "copyLink": "Copy Tracking Link",
+    "linkCopied": "Link copied!",
+    "stages": {
+      "PRE_ARRIVAL_DOCS": "Pre-Arrival Documents",
+      "VESSEL_ARRIVAL": "Vessel Arrival",
+      "CUSTOMS_DECLARATION": "Customs Declaration",
+      "CUSTOMS_PAYMENT": "Customs Payment",
+      "INSPECTION": "Inspection",
+      "PORT_FEES": "Port Fees",
+      "QUALITY_STANDARDS": "Quality & Standards",
+      "RELEASE": "Release",
+      "LOADING": "Loading",
+      "IN_TRANSIT": "In Transit",
+      "DELIVERED": "Delivered"
+    },
+    "stageDescriptions": {
+      "PRE_ARRIVAL_DOCS": "Documentation review before vessel arrives",
+      "VESSEL_ARRIVAL": "Vessel has arrived at Port Sudan",
+      "CUSTOMS_DECLARATION": "Customs declaration submitted and processing",
+      "CUSTOMS_PAYMENT": "Customs duties and taxes being paid",
+      "INSPECTION": "Cargo inspection in progress",
+      "PORT_FEES": "Port handling fees being processed",
+      "QUALITY_STANDARDS": "Quality and standards verification",
+      "RELEASE": "Cargo release order issued",
+      "LOADING": "Cargo being loaded for transport",
+      "IN_TRANSIT": "Shipment en route to destination",
+      "DELIVERED": "Shipment delivered successfully"
+    },
+    "statuses": {
+      "PENDING": "Pending",
+      "IN_PROGRESS": "In Progress",
+      "COMPLETED": "Completed",
+      "SKIPPED": "Skipped"
+    },
+    "actions": {
+      "advanceStage": "Advance to Next Stage",
+      "updateStage": "Update Stage",
+      "updateEta": "Update ETA",
+      "addNote": "Add Note",
+      "markComplete": "Mark Complete",
+      "skip": "Skip Stage",
+      "initializeTracking": "Initialize Tracking",
+      "generateNumber": "Generate Tracking Number"
+    },
+    "eta": "ETA",
+    "completedAt": "Completed",
+    "startedAt": "Started",
+    "notes": "Notes",
+    "noNotes": "No notes added",
+    "addNotes": "Add notes for this stage...",
+    "stageOf": "Stage {current} of {total}",
+    "paymentRequested": "Payment Requested",
+    "paymentReceived": "Payment Received",
+    "requestPayment": "Request Payment",
+    "paymentPending": "Payment Pending"
+  },
+  "marketplace": {
+    "title": "Marketplace",
+    "description": "Find services for your clearance needs",
+    "placeOrder": "Place Order",
+    "learnMore": "Learn More",
+    "vendor": "Vendor",
+    "priceFrom": "From",
+    "priceTo": "to",
+    "currency": "SDG",
+    "orderPlaced": "Request submitted successfully",
+    "contactVia": "Contact via",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "phone": "Phone",
+    "inStock": "Available",
+    "outOfStock": "Unavailable",
+    "serviceArea": "Service Area",
+    "viewDetails": "View Details",
+    "backToMarketplace": "Back to Marketplace",
+    "categories": {
+      "ALL": "All Services",
+      "TRUCK": "Trucks",
+      "FORKLIFT": "Forklifts",
+      "MANPOWER": "Manpower",
+      "TOOLS": "Tools & Equipment"
+    },
+    "request": {
+      "title": "Request Service",
+      "name": "Your Name",
+      "phone": "Phone Number",
+      "email": "Email (optional)",
+      "message": "Message to vendor (optional)",
+      "quantity": "Quantity",
+      "preferredDate": "Preferred Date",
+      "submit": "Submit Request",
+      "success": "Your request has been submitted! The vendor will contact you soon.",
+      "contactInfo": "Vendor Contact Information"
+    },
+    "vendorProfile": {
+      "register": "Register as Vendor",
+      "businessName": "Business Name",
+      "businessNameAr": "Business Name (Arabic)",
+      "contactName": "Contact Person",
+      "description": "Business Description",
+      "pending": "Your application is pending approval",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "suspended": "Suspended",
+      "myListings": "My Listings",
+      "myRequests": "Requests Received",
+      "addService": "Add Service"
+    },
+    "statuses": {
+      "PENDING": "Pending",
+      "CONTACTED": "Contacted",
+      "IN_PROGRESS": "In Progress",
+      "COMPLETED": "Completed",
+      "CANCELLED": "Cancelled"
+    }
+  },
+  "errorPage": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred. Please try again.",
+    "retry": "Try Again",
+    "goHome": "Go to Homepage",
+    "goDashboard": "Go to Dashboard",
+    "globalTitle": "Application Error",
+    "globalDescription": "A critical error occurred. Please refresh the page.",
+    "refresh": "Refresh Page"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "goHome": "Go to Homepage",
+    "goDashboard": "Go to Dashboard",
+    "searchPlaceholder": "Search for a page..."
+  },
+  "dream": {
+    "title": "Find Your Dream",
+    "subtitle": "Tell us what you dream about and we'll make it happen",
+    "tags": {
+      "storytelling": "Storytelling",
+      "commercials": "Commercials",
+      "documentaries": "Documentaries",
+      "musicVideos": "Music Videos",
+      "liveStreaming": "Live Streaming",
+      "productShots": "Product Shots",
+      "events": "Events",
+      "portraits": "Portraits",
+      "editorial": "Editorial",
+      "architecture": "Architecture",
+      "branding": "Branding",
+      "visualSystems": "Visual Systems",
+      "packaging": "Packaging",
+      "webDesign": "Web Design",
+      "printDesign": "Print Design",
+      "socialStrategy": "Social Strategy",
+      "contentCreation": "Content Creation",
+      "influencer": "Influencer",
+      "analytics": "Analytics",
+      "community": "Community",
+      "motionGraphics": "Motion Graphics",
+      "creativeDirection": "Creative Direction",
+      "campaigns": "Campaigns",
+      "rebranding": "Rebranding",
+      "digitalMarketing": "Digital Marketing",
+      "podcast": "Podcast"
+    }
+  },
+  "dreamServices": {
+    "video": { "title": "Video Production", "description": "Professional video production services" },
+    "photo": { "title": "Photography", "description": "Professional photography services" },
+    "design": { "title": "Design", "description": "Creative design services" },
+    "social": { "title": "Social Media", "description": "Social media management services" }
+  },
+  "services": {
+    "title": "Our Activities",
+    "items": [
+      { "title": "Education & Training", "icon": "GraduationCap" },
+      { "title": "Community Gatherings", "icon": "Coffee" },
+      { "title": "Lectures & Seminars", "icon": "Mic" },
+      { "title": "Publications", "icon": "BookOpen" },
+      { "title": "Social Welfare", "icon": "HandHeart" },
+      { "title": "Media & Press", "icon": "Newspaper" },
+      { "title": "Awards & Recognition", "icon": "Award" }
+    ]
+  },
+  "cta": {
+    "title": "Join the Movement",
+    "subtitle": "Be part of a community working towards a better future. Together we can make a difference.",
+    "button": "Become a Member"
+  },
+  "docs": {
+    "sidebar": {
+      "introduction": "Introduction",
+      "membership": "Membership Guide",
+      "standards": "PM Standards"
+    },
+    "onThisPage": "On This Page"
+  },
+  "footer": {
+    "description": "A national movement dedicated to building a better future for Sudan through education, community, and civic engagement.",
+    "quickLinks": "Quick Links",
+    "resources": "Resources",
+    "contact": "Contact",
+    "phone": "+249 123 456 789",
+    "email": "info@spma.sd",
+    "copyright": "All rights reserved.",
+    "newsletter": {
+      "title": "Stay Updated",
+      "description": "Subscribe to receive the latest news and updates.",
+      "placeholder": "Enter your email",
+      "button": "Subscribe"
+    }
+  },
+  "library": {
+    "title": "Electronic Library",
+    "navigation": {
+      "browse": "Browse Books",
+      "favorite": "Favorites",
+      "myProfile": "My Profile",
+      "admin": "Admin"
+    },
+    "filters": {
+      "all": "All Books",
+      "allGenres": "All Genres"
+    },
+    "latestBooks": "Latest Books",
+    "featuredBooks": "Featured Books",
+    "literatureBooks": "Literature",
+    "scienceBooks": "Science & Knowledge",
+    "noBooks": "No books available",
+    "emptyLibrary": "The library is empty. Check back later or contact the administrator to add books.",
+    "searchBooks": "Search books",
+    "booksInLibrary": "books in the library",
+    "allBooks": "All Books",
+    "noResults": "No books found matching your search",
+    "previous": "Previous",
+    "next": "Next",
+    "page": "Page",
+    "by": "by",
+    "of": "of",
+    "copiesAvailable": "copies available",
+    "description": "Description",
+    "totalCopies": "Total Copies",
+    "available": "Available",
+    "genre": "Genre",
+    "rating": "Rating",
+    "summary": "Summary",
+    "borrowBook": "Borrow Book",
+    "borrowing": "Borrowing...",
+    "returnBook": "Return Book",
+    "returning": "Returning...",
+    "borrowedThisBook": "You have borrowed this book",
+    "currentlyUnavailable": "Currently Unavailable",
+    "loginRequired": "Login required to borrow books",
+    "myProfile": "My Library Profile",
+    "currentlyBorrowed": "Currently Borrowed",
+    "noBorrowedBooks": "You haven't borrowed any books yet",
+    "borrowHistory": "Borrow History",
+    "noBorrowHistory": "No borrow history yet",
+    "borrowDate": "Borrowed",
+    "dueDate": "Due",
+    "returnDate": "Returned",
+    "overdue": "Overdue!",
+    "viewBook": "View Book",
+    "collaborate": {
+      "title": "PMBOK Guide - 7th Edition",
+      "author": "By Project Management Institute",
+      "description": "The essential guide for project management professionals, covering principles and performance domains.",
+      "cta": "Get book"
+    },
+    "admin": {
+      "dashboard": "Library Dashboard",
+      "addBook": "Add Book",
+      "totalBooks": "Total Books",
+      "totalBorrows": "Total Borrows",
+      "activeBorrows": "Active Borrows",
+      "overdueBooks": "Overdue Books",
+      "quickActions": "Quick Actions",
+      "viewAllBooks": "View All Books",
+      "allBooks": "All Books",
+      "createNewBook": "Create New Book",
+      "noBooks": "No books found",
+      "addFirstBook": "Add First Book",
+      "bookTitle": "Title",
+      "bookAuthor": "Author",
+      "bookGenre": "Genre",
+      "totalCopies": "Total Copies",
+      "bookRating": "Rating",
+      "enterRating": "Enter rating (0-5)",
+      "bookCover": "Book Cover",
+      "uploadBookCover": "Enter cover image URL",
+      "coverColor": "Cover Color",
+      "bookTrailer": "Book Trailer",
+      "uploadBookTrailer": "Enter video URL",
+      "bookDescription": "Description",
+      "bookSummary": "Summary",
+      "selectGenre": "Select genre",
+      "cancel": "Cancel",
+      "creating": "Creating...",
+      "addBookToLibrary": "Add Book to Library",
+      "actions": "Actions"
+    }
+  }
+}

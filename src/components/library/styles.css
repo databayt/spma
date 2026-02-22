@@ -1,0 +1,462 @@
+/* Library Module Styles - Using Tailwind CSS Classes */
+
+/* Book Grid Layout */
+.library-book-grid {
+  @apply grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5;
+}
+
+/* Book Card */
+.book-card {
+  @apply relative cursor-pointer overflow-hidden rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-xl dark:bg-gray-800;
+}
+
+.book-card-cover {
+  @apply relative h-64 w-full overflow-hidden bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-800;
+}
+
+.book-card-cover img {
+  @apply h-full w-full object-cover transition-transform duration-300;
+}
+
+.book-card:hover .book-card-cover img {
+  @apply scale-105;
+}
+
+.book-card-body {
+  @apply space-y-2 p-4;
+}
+
+.book-card-title {
+  @apply line-clamp-2 text-lg font-semibold text-gray-900 dark:text-gray-100;
+}
+
+.book-card-author {
+  @apply text-sm text-gray-600 dark:text-gray-400;
+}
+
+.book-card-genre {
+  @apply inline-flex items-center rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-200;
+}
+
+.book-card-rating {
+  @apply flex items-center gap-1 text-yellow-500;
+}
+
+.book-card-status {
+  @apply absolute top-2 right-2 rounded-md px-2 py-1 text-xs font-semibold;
+}
+
+.book-card-status.available {
+  @apply bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200;
+}
+
+.book-card-status.borrowed {
+  @apply bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200;
+}
+
+/* Book Detail Page */
+.book-detail-container {
+  @apply mx-auto max-w-7xl py-8;
+}
+
+.book-detail-header {
+  @apply mb-8 grid grid-cols-1 gap-8 md:grid-cols-3;
+}
+
+.book-detail-cover {
+  @apply relative h-96 overflow-hidden rounded-lg shadow-xl md:h-full;
+}
+
+.book-detail-info {
+  @apply space-y-6 md:col-span-2;
+}
+
+.book-detail-title {
+  @apply text-3xl font-bold text-gray-900 dark:text-gray-100;
+}
+
+.book-detail-meta {
+  @apply flex flex-wrap items-center gap-4 text-sm text-gray-600 dark:text-gray-400;
+}
+
+.book-detail-description {
+  @apply max-w-none text-base leading-relaxed;
+}
+
+.book-detail-actions {
+  @apply flex flex-wrap gap-4;
+}
+
+/* Library Admin Dashboard */
+.library-admin-container {
+  @apply mx-auto max-w-7xl py-8;
+}
+
+.library-admin-header {
+  @apply mb-8 flex flex-col items-start justify-between space-y-4 sm:flex-row sm:items-center sm:space-y-0;
+}
+
+.library-admin-title {
+  @apply text-3xl font-bold text-gray-900 dark:text-gray-100;
+}
+
+.library-admin-stats-grid {
+  @apply mb-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4;
+}
+
+.library-admin-stat-card {
+  @apply rounded-lg bg-white p-6 shadow dark:bg-gray-800;
+}
+
+.library-admin-stat-label {
+  @apply mb-2 text-sm font-medium text-gray-600 dark:text-gray-400;
+}
+
+.library-admin-stat-value {
+  @apply text-3xl font-bold text-gray-900 dark:text-gray-100;
+}
+
+/* Library Table */
+.library-table-container {
+  @apply overflow-hidden rounded-lg bg-white shadow dark:bg-gray-800;
+}
+
+.library-table {
+  @apply min-w-full divide-y divide-gray-200 dark:divide-gray-700;
+}
+
+.library-table-header {
+  @apply bg-gray-50 dark:bg-gray-900;
+}
+
+.library-table-header-cell {
+  @apply px-6 py-3 text-left text-xs font-medium tracking-wider text-gray-500 uppercase dark:text-gray-400;
+}
+
+.library-table-body {
+  @apply divide-y divide-gray-200 bg-white dark:divide-gray-700 dark:bg-gray-800;
+}
+
+.library-table-cell {
+  @apply px-6 py-4 text-sm whitespace-nowrap text-gray-900 dark:text-gray-100;
+}
+
+/* Book Form */
+.book-form-container {
+  @apply mx-auto max-w-4xl py-8;
+}
+
+.book-form-card {
+  @apply rounded-lg bg-white p-6 shadow-lg dark:bg-gray-800;
+}
+
+.book-form-grid {
+  @apply grid grid-cols-1 gap-6 md:grid-cols-2;
+}
+
+.book-form-field {
+  @apply space-y-2;
+}
+
+.book-form-label {
+  @apply block text-sm font-medium text-gray-700 dark:text-gray-300;
+}
+
+.book-form-input {
+  @apply w-full rounded-md border border-gray-300 px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100;
+}
+
+.book-form-textarea {
+  @apply min-h-[120px] w-full rounded-md border border-gray-300 px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100;
+}
+
+.book-form-error {
+  @apply text-sm text-red-600 dark:text-red-400;
+}
+
+/* User Profile */
+.library-profile-container {
+  @apply mx-auto max-w-7xl py-8;
+}
+
+.library-profile-header {
+  @apply mb-8;
+}
+
+.library-profile-title {
+  @apply mb-2 text-3xl font-bold text-gray-900 dark:text-gray-100;
+}
+
+.library-profile-subtitle {
+  @apply text-gray-600 dark:text-gray-400;
+}
+
+.library-profile-section {
+  @apply mb-6 rounded-lg bg-white p-6 shadow dark:bg-gray-800;
+}
+
+.library-profile-section-title {
+  @apply mb-4 text-xl font-semibold text-gray-900 dark:text-gray-100;
+}
+
+.library-profile-books-grid {
+  @apply grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3;
+}
+
+.library-profile-book-card {
+  @apply flex gap-4 rounded-lg bg-gray-50 p-4 dark:bg-gray-700;
+}
+
+.library-profile-book-cover {
+  @apply h-20 w-16 flex-shrink-0 rounded bg-gray-300 dark:bg-gray-600;
+}
+
+.library-profile-book-info {
+  @apply min-w-0 flex-1;
+}
+
+.library-profile-book-title {
+  @apply truncate font-medium text-gray-900 dark:text-gray-100;
+}
+
+.library-profile-book-meta {
+  @apply text-sm text-gray-600 dark:text-gray-400;
+}
+
+.library-profile-book-status {
+  @apply mt-1 inline-flex items-center rounded px-2 py-0.5 text-xs font-medium;
+}
+
+.library-profile-book-status.overdue {
+  @apply bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200;
+}
+
+.library-profile-book-status.due-soon {
+  @apply bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200;
+}
+
+.library-profile-book-status.returned {
+  @apply bg-gray-100 text-gray-800 dark:bg-gray-600 dark:text-gray-200;
+}
+
+/* Search and Filter Bar */
+.library-search-bar {
+  @apply mb-6 flex flex-col gap-4 sm:flex-row;
+}
+
+.library-search-input {
+  @apply flex-1 rounded-lg border border-gray-300 px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100;
+}
+
+.library-filter-button {
+  @apply rounded-lg border border-gray-300 px-4 py-2 transition-colors hover:bg-gray-50 dark:border-gray-600 dark:hover:bg-gray-700;
+}
+
+/* Loading States */
+.library-loading-skeleton {
+  @apply animate-pulse;
+}
+
+.library-loading-skeleton-text {
+  @apply h-4 rounded bg-gray-200 dark:bg-gray-700;
+}
+
+.library-loading-skeleton-box {
+  @apply rounded bg-gray-200 dark:bg-gray-700;
+}
+
+/* Empty States */
+.library-empty-state {
+  @apply py-12 text-center;
+}
+
+.library-empty-icon {
+  @apply mx-auto h-12 w-12 text-gray-400;
+}
+
+.library-empty-title {
+  @apply mt-2 text-lg font-medium text-gray-900 dark:text-gray-100;
+}
+
+.library-empty-description {
+  @apply mt-1 text-sm text-gray-500 dark:text-gray-400;
+}
+
+/* Responsive Utilities */
+@media (max-width: 640px) {
+  .library-book-grid {
+    @apply grid-cols-2;
+  }
+
+  .book-card-cover {
+    @apply h-48;
+  }
+}
+
+/* Animation Classes */
+.library-fade-in {
+  animation: fadeIn 300ms ease-out;
+}
+
+.library-slide-up {
+  animation: slideUp 300ms ease-out;
+}
+
+.library-scale-in {
+  animation: scaleIn 200ms ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Color Picker */
+.color-picker-container {
+  @apply space-y-3;
+}
+
+.color-picker-input-wrapper {
+  @apply flex items-center gap-2;
+}
+
+.color-picker-hash {
+  @apply text-muted-foreground text-sm font-medium;
+}
+
+.color-picker-input {
+  @apply w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100;
+}
+
+.color-picker {
+  width: 100%;
+}
+
+/* Book Video */
+.book-video-container {
+  @apply space-y-4;
+}
+
+.book-video-wrapper {
+  @apply relative aspect-video w-full overflow-hidden rounded-lg;
+}
+
+.book-video-iframe {
+  @apply absolute inset-0 h-full w-full;
+}
+
+/* Book Cover Detail */
+.book-cover-wrapper {
+  @apply relative h-full w-full overflow-hidden rounded-lg;
+}
+
+.book-cover-detail-image {
+  @apply h-full w-full object-cover;
+}
+
+/* Admin Books */
+.library-admin-books-container {
+  @apply mx-auto max-w-7xl space-y-6 py-8;
+}
+
+.library-admin-books-header {
+  @apply flex items-center justify-between;
+}
+
+.library-admin-books-title {
+  @apply text-2xl font-bold;
+}
+
+.library-admin-books-table-wrapper {
+  @apply overflow-x-auto rounded-lg border;
+}
+
+.library-admin-books-table {
+  @apply w-full text-sm;
+}
+
+.library-admin-books-table thead {
+  @apply bg-muted;
+}
+
+.library-admin-books-table th {
+  @apply px-4 py-3 text-left text-xs font-medium uppercase;
+}
+
+.library-admin-books-table td {
+  @apply border-t px-4 py-3;
+}
+
+.library-admin-books-empty {
+  @apply flex flex-col items-center justify-center py-12;
+}
+
+/* Admin New Book */
+.library-admin-new-book-container {
+  @apply mx-auto max-w-4xl space-y-6 py-8;
+}
+
+.library-admin-new-book-title {
+  @apply text-2xl font-bold;
+}
+
+/* Admin Actions Grid */
+.library-admin-actions {
+  @apply mt-8;
+}
+
+.library-admin-actions-grid {
+  @apply grid grid-cols-1 gap-4 sm:grid-cols-2;
+}
+
+/* Profile Grid */
+.library-profile-grid {
+  @apply grid grid-cols-1 gap-6 sm:grid-cols-2;
+}
+
+.library-profile-card {
+  @apply flex gap-4 rounded-lg border p-4;
+}
+
+.library-profile-card-image {
+  @apply h-[225px] w-[150px] flex-shrink-0 overflow-hidden rounded-lg;
+}
+
+.library-profile-card-content {
+  @apply flex flex-1 flex-col;
+}
+
+.library-profile-card-meta {
+  @apply mt-2 space-y-1;
+}
+
+/* Profile History */
+.library-profile-history {
+  @apply space-y-4;
+}
+
+.library-profile-history-item {
+  @apply flex items-center gap-4 rounded-lg border p-4;
+}
+
+.library-profile-history-image {
+  @apply h-[120px] w-[80px] flex-shrink-0 overflow-hidden rounded;
+}
+
+.library-profile-history-content {
+  @apply flex-1;
+}
+
+.library-profile-history-dates {
+  @apply mt-1 flex gap-4;
+}
