@@ -18,8 +18,8 @@ export default async function DocsLayout({ children, params }: DocsLayoutProps) 
   return (
     <>
       <Header lang={lang} dictionary={dictionary} />
-      <div className="layout-container mx-auto flex flex-1 flex-col pt-20">
-        <SidebarProvider className="min-h-min flex-1 items-start [--sidebar-width:220px] [--top-spacing:0] lg:[--sidebar-width:240px] lg:[--top-spacing:calc(var(--spacing)*4)] lg:grid lg:grid-cols-[var(--sidebar-width)_minmax(0,1fr)] lg:gap-6">
+      <div className="layout-container mx-auto flex flex-1 flex-col px-6 pt-14 md:px-16 lg:px-24 xl:px-32">
+        <SidebarProvider className="min-h-min flex-1 items-start [--sidebar-width:220px] [--top-spacing:0] lg:[--sidebar-width:240px] lg:[--top-spacing:calc(var(--spacing)*2)] lg:grid lg:grid-cols-[var(--sidebar-width)_minmax(0,1fr)] lg:gap-6">
           <DocsSidebar
             dictionary={dictionary}
             lang={lang}

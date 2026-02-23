@@ -1082,6 +1082,61 @@ export interface Dictionary {
     }
     onThisPage?: string
   }
+  membership?: {
+    title?: string
+  }
+  members?: {
+    directory?: {
+      title?: string
+      subtitle?: string
+      search?: string
+      allCommittees?: string
+      noMembers?: string
+      joinUs?: string
+      view?: string
+    }
+    onboarding?: {
+      welcome?: string
+      welcomeTitle?: string
+      welcomeDesc?: string
+      personalInfo?: string
+      personalInfoDesc?: string
+      professionalInfo?: string
+      professionalInfoDesc?: string
+      committees?: string
+      committeesDesc?: string
+      review?: string
+      reviewDesc?: string
+      submit?: string
+      next?: string
+      back?: string
+      successTitle?: string
+      successDesc?: string
+      nextSteps?: string
+    }
+    profile?: {
+      about?: string
+      certifications?: string
+      noCertifications?: string
+      professionalInfo?: string
+      contact?: string
+      experience?: string
+      years?: string
+    }
+    admin?: {
+      title?: string
+      pending?: string
+      approved?: string
+      rejected?: string
+      all?: string
+      approve?: string
+      reject?: string
+      details?: string
+      reviewNotes?: string
+      noPending?: string
+      pendingCount?: string
+    }
+  }
   library?: {
     title?: string
     navigation?: {

@@ -24,7 +24,7 @@ export default async function AboutPage({
     <>
       <Header lang={lang} dictionary={dict} />
       <main className="min-h-screen pt-16">
-        <div className="layout-container px-6 md:px-8 py-16">
+        <div className="layout-container px-10 md:px-24 lg:px-32 py-16">
             {/* Who We Are & Why Us Grid */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-28 mb-20">
               {/* Who We Are */}
@@ -46,7 +46,7 @@ export default async function AboutPage({
                     alt="Sudanese shop"
                     width={500}
                     height={250}
-                    className="w-full h-[600px] rounded-lg object-cover"
+                    className="w-full h-[400px] rounded-lg object-cover"
                   />
                 </div>
               </div>
@@ -66,18 +66,18 @@ export default async function AboutPage({
                 </div>
                 <div className="mt-8">
                   <Image
-                    src="/shop.jpg"
-                    alt="Sudanese street"
+                    src="/nile.jpg"
+                    alt="Nile river"
                     width={500}
                     height={250}
-                    className="w-full h-[600px] rounded-lg object-cover"
+                    className="w-full h-[400px] rounded-lg object-cover"
                   />
                 </div>
               </div>
             </div>
 
             {/* Mission Section */}
-            <div className="bg-muted rounded-3xl p-12">
+            <div className="bg-gray-200 dark:bg-gray-900 rounded-3xl p-12">
               <div className="max-w-4xl mx-auto text-center space-y-8">
                 <div className="space-y-6">
                   <div className="text-primary text-sm font-medium tracking-widest uppercase">

@@ -43,6 +43,7 @@ export default function BookCard({ book }: Props) {
               alt={book.title}
               fill
               className="object-cover"
+              unoptimized
               onError={() => setImageError(true)}
             />
           ) : (

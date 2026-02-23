@@ -2,15 +2,14 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Facebook, Linkedin, Twitter, Youtube } from "lucide-react";
+import { Facebook, Linkedin, MessageCircle } from "lucide-react";
 import { NAV_ITEMS, SOCIAL_LINKS } from "@/components/home/constants";
 import type { Dictionary } from "@/components/internationalization/dictionaries";
 
 const socialIcons: Record<string, React.ElementType> = {
   facebook: Facebook,
   linkedin: Linkedin,
-  twitter: Twitter,
-  youtube: Youtube,
+  whatsapp: MessageCircle,
 };
 
 interface FooterProps {

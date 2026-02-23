@@ -61,6 +61,7 @@ export function BookCover({
       height={height}
       className={`h-full w-full object-cover ${className}`}
       priority={priority}
+      unoptimized
       onError={() => setImageError(true)}
     />
   )

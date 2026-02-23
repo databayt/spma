@@ -53,7 +53,7 @@ export function MobilePhotoGrid() {
           src="/facebook/spma.jpg"
           alt="SPMA"
           fill
-          className="object-cover"
+          className="object-contain"
           sizes="100vw"
         />
       </div>

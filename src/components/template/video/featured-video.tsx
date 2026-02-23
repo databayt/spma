@@ -10,7 +10,7 @@ const FeaturedVideos = () => {
   const { t } = useTranslations();
 
   return (
-    <div className="mt-6 md:mt-20 px-10 md:px-20 lg:px-32">
+    <div className="mt-6 md:mt-20 layout-container">
       <SiteHeading
         title={t.video?.title ?? "الوثائقيات"}
         description={t.video?.subtitle ?? "ما يضر الجهل به"}

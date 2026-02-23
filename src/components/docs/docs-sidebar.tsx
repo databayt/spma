@@ -16,6 +16,10 @@ const DOCS_LINKS = [
   { key: "introduction", href: "/docs", fallback: "Introduction" },
   { key: "membership", href: "/docs/membership", fallback: "Membership Guide" },
   { key: "standards", href: "/docs/standards", fallback: "PM Standards" },
+  { key: "certifications", href: "/docs/certifications", fallback: "Certifications" },
+  { key: "governance", href: "/docs/governance", fallback: "Governance & Bylaws" },
+  { key: "events", href: "/docs/events", fallback: "Events & Programs" },
+  { key: "resources", href: "/docs/resources", fallback: "Resources & Library" },
 ] as const
 
 interface DocsSidebarProps {
@@ -37,7 +41,7 @@ export function DocsSidebar({
 
   return (
     <Sidebar
-      className="sticky top-[calc(var(--header-height)+2rem)] z-30 hidden h-[calc(100svh-var(--footer-height)-4rem)] overscroll-none bg-transparent lg:flex"
+      className="sticky top-20 z-30 hidden h-[calc(100svh-5rem)] overscroll-none bg-transparent lg:flex"
       collapsible="none"
       {...props}
     >
@@ -57,7 +61,7 @@ export function DocsSidebar({
                       <SidebarMenuButton
                         asChild
                         isActive={isActive}
-                        className="relative h-[30px] w-full border border-transparent text-[0.8rem] font-medium p-0"
+                        className="relative h-[30px] w-full border border-transparent text-[0.8rem] font-medium p-0 hover:bg-transparent data-[active=true]:bg-transparent data-[active=true]:font-semibold"
                       >
                         <Link href={fullHref} className="block w-full">
                           {name}

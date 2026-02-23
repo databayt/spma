@@ -99,8 +99,7 @@ export const BOARD_MEMBERS: BoardMember[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
   { icon: "facebook", href: "https://www.facebook.com/Sudanpma", label: "Facebook" },
   { icon: "linkedin", href: "https://www.linkedin.com/company/sdpam", label: "LinkedIn" },
-  { icon: "twitter", href: "#", label: "X" },
-  { icon: "youtube", href: "#", label: "YouTube" },
+  { icon: "whatsapp", href: "https://wa.me/249156721400", label: "WhatsApp" },
 ];
 
 export const PHOTO_GRID_IMAGES = [

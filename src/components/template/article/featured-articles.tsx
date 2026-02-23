@@ -10,7 +10,7 @@ const FeaturedArticles = () => {
   const { t } = useTranslations();
 
   return (
-    <div className="px-10 md:px-20 lg:px-32">
+    <div className="layout-container" dir="rtl">
       <Head
         title={t.article?.title ?? "المقالات"}
         description={t.article?.subtitle ?? "مدونة الحركة"}

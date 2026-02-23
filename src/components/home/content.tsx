@@ -1,4 +1,5 @@
 import { Header } from "@/components/template/header/header";
+import MobileHeader from "@/components/template/header/mobile-header";
 import { Hero } from "./hero";
 import { PickupSection } from "./pickup-section";
 import { PhotoGridSection } from "./photo-grid-section";
@@ -10,7 +11,6 @@ import FeaturedVideos from "@/components/template/video/featured-video";
 import FeaturedArticles from "@/components/template/article/featured-articles";
 import Event from "@/components/template/event/event";
 import LogoCloud from "./logo-cloud";
-import Testimonials from "@/components/template/testimonial/testimonials";
 import type { Dictionary } from "@/components/internationalization/dictionaries";
 
 interface ContentProps {
@@ -21,6 +21,7 @@ interface ContentProps {
 export function Content({ lang, dictionary }: ContentProps) {
   return (
     <>
+      <MobileHeader lang={lang} />
       <Header lang={lang} dictionary={dictionary} />
       <main>
         <div className="relative z-20 rounded-b-[40px] md:rounded-b-[80px] lg:rounded-b-[120px] overflow-hidden shadow-2xl bg-background">
@@ -42,7 +43,6 @@ export function Content({ lang, dictionary }: ContentProps) {
         <FeaturedArticles />
         <Event />
         <LogoCloud lang={lang} />
-        <Testimonials />
       </main>
       <Footer lang={lang} dictionary={dictionary} />
     </>

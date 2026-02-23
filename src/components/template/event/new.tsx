@@ -69,7 +69,7 @@ export default function EventCard() {
   ];
 
   return (
-    <div className="min-h-screen px-10 md:px-20 lg:px-32">
+    <div className="min-h-screen layout-container">
       <div>
         {/* Events Grid */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">

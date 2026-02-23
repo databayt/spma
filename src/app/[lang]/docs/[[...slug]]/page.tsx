@@ -58,10 +58,9 @@ export default async function DocsPage(props: {
   const pageUrl = `${prefix}${page.url}`
 
   return (
-    <div className="flex items-stretch text-[1.05rem] sm:text-[15px] xl:w-full">
+    <div className="flex items-stretch text-[1.1rem] sm:text-base xl:w-full">
       <div className="flex min-w-0 flex-1 flex-col">
-        <div className="h-[var(--top-spacing)] shrink-0" />
-        <div className="mx-auto flex w-full max-w-2xl min-w-0 flex-1 flex-col gap-8 py-6 text-neutral-800 lg:py-8 dark:text-neutral-300">
+        <div className="flex w-full max-w-2xl min-w-0 flex-1 flex-col gap-8 py-4 text-neutral-800 lg:py-6 dark:text-neutral-300">
           <div className="flex flex-col gap-2">
             <div className="flex flex-col gap-2">
               <div className="flex items-start justify-between">
@@ -99,7 +98,7 @@ export default async function DocsPage(props: {
                 </div>
               </div>
               {doc.description && (
-                <p className="text-muted-foreground text-[1.05rem] text-balance sm:text-base">
+                <p className="text-muted-foreground text-[1.1rem] text-balance sm:text-base">
                   {doc.description}
                 </p>
               )}
@@ -110,7 +109,7 @@ export default async function DocsPage(props: {
             <MDX components={mdxComponents} />
           </div>
         </div>
-        <div className="mx-auto hidden h-16 w-full max-w-2xl items-center gap-2 sm:flex">
+        <div className="hidden h-16 w-full max-w-2xl items-center gap-2 sm:flex">
           {neighbours.previous && (
             <Button
               variant="secondary"
@@ -137,10 +136,9 @@ export default async function DocsPage(props: {
           )}
         </div>
       </div>
-      <div className="sticky top-[calc(var(--header-height)+2rem)] z-30 ms-auto hidden h-[calc(100vh-var(--header-height)-4rem)] w-72 flex-col gap-4 overflow-hidden pb-8 xl:flex">
-        <div className="h-[var(--top-spacing)] shrink-0" />
+      <div className="sticky top-20 z-30 ms-auto hidden h-[calc(100vh-5rem)] w-72 shrink-0 flex-col gap-4 overflow-hidden pb-8 ps-6 xl:flex">
         {doc.toc?.length ? (
-          <div className="no-scrollbar overflow-y-auto px-8">
+          <div className="no-scrollbar overflow-y-auto px-4">
             <DocsTableOfContents
               toc={doc.toc as any}
               dictionary={dictionary}

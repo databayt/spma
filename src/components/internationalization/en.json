@@ -18,6 +18,58 @@
   "membership": {
     "title": "Membership"
   },
+  "members": {
+    "directory": {
+      "title": "Member Directory",
+      "subtitle": "approved members",
+      "search": "Search by name or organization...",
+      "allCommittees": "All Committees",
+      "noMembers": "No members found",
+      "joinUs": "Join Us",
+      "view": "View"
+    },
+    "onboarding": {
+      "welcome": "Welcome",
+      "welcomeTitle": "Welcome to SPMA",
+      "welcomeDesc": "Join a professional community of 500+ members and experts in project management",
+      "personalInfo": "Personal Information",
+      "personalInfoDesc": "Enter your basic information",
+      "professionalInfo": "Professional Information",
+      "professionalInfoDesc": "Tell us about your professional experience",
+      "committees": "Committees",
+      "committeesDesc": "Select committees you'd like to join (optional)",
+      "review": "Review",
+      "reviewDesc": "Review your information before submitting",
+      "submit": "Submit Application",
+      "next": "Next",
+      "back": "Back",
+      "successTitle": "Application Submitted!",
+      "successDesc": "Thank you for joining! Our team will review your application and contact you via email within 48 hours",
+      "nextSteps": "Next Steps"
+    },
+    "profile": {
+      "about": "About",
+      "certifications": "Certifications",
+      "noCertifications": "No certifications",
+      "professionalInfo": "Professional Info",
+      "contact": "Contact",
+      "experience": "Experience",
+      "years": "years"
+    },
+    "admin": {
+      "title": "Application Review",
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "all": "All",
+      "approve": "Approve",
+      "reject": "Reject",
+      "details": "Details",
+      "reviewNotes": "Review Notes",
+      "noPending": "No applications pending",
+      "pendingCount": "applications pending review"
+    }
+  },
   "common": {
     "appName": "Abdout",
     "appNameShort": "SPMA",
@@ -826,31 +878,31 @@
       "who": {
         "subtitle": "W h o   W e   A r e",
         "title": "Who We Are",
-        "description": "Established in 1985, Abdout was founded with the goal of supporting and developing the local community by providing exceptional customs clearance and logistics services that enhance trade efficiency and meet business needs transparently. Since our establishment, we have been committed to building a service system based on reliability, expertise, and sustainable business practices."
+        "description": "The Sudanese Project Management Association (SPMA) is a professional non-profit body established to advance the discipline of project management across Sudan. We bring together project managers, engineers, and professionals from diverse sectors to share knowledge, develop competencies, and raise the standards of project delivery in our country."
       },
       "why": {
         "subtitle": "W h y   U s",
         "title": "Why Us",
-        "description": "We believe that efficient logistics is the foundation for successful trade. With our dedication to offering high-quality services that reflect the aspirations of businesses, we meet growing needs efficiently. Our commitment to transparency, professional values, and sustainable practices makes us the trusted choice for customs clearance services in Port Sudan."
+        "description": "SPMA is the only professional association in Sudan exclusively dedicated to project management excellence. We provide internationally recognized training, networking opportunities, and a platform for practitioners to grow. Our members gain access to global best practices, mentorship from industry leaders, and a vibrant community committed to professional development."
       },
       "mission": {
         "subtitle": "O u r   M i s s i o n",
         "title": "Our Vision and Mission",
-        "description": "To provide an effective logistics environment that supports businesses, offers reliable services, and launches developmental initiatives and strategic partnerships that enhance trade efficiency and economic growth. We strive to be the leading customs clearance company that promotes seamless international trade."
+        "description": "To be the leading professional body for project management excellence in Sudan and the region. Our mission is to promote best practices, develop professional competencies, foster a community of practice, and support continuous learning — empowering Sudanese professionals to deliver world-class projects."
       }
     },
     "goals": [
       {
-        "title": "Business Support",
-        "description": "Building strong business relationships through reliable services that support importers and exporters in achieving their goals."
+        "title": "Professional Development",
+        "description": "Empowering project managers through accredited training programs, workshops, and certification pathways that meet international standards."
       },
       {
-        "title": "Quality Services",
-        "description": "Delivering reliable, high-quality customs clearance and logistics services that meet the evolving needs of our clients with transparency and efficiency."
+        "title": "Knowledge Sharing",
+        "description": "Building a thriving community of practice through conferences, publications, and collaborative platforms that connect professionals across sectors."
       },
       {
-        "title": "Sustainable Growth",
-        "description": "Implementing sustainable business practices that ensure long-term growth and prosperity for our company and clients."
+        "title": "Industry Impact",
+        "description": "Elevating project management standards in Sudan by partnering with government, academia, and the private sector to drive successful project outcomes."
       }
     ],
     "boardOfDirectors": {
@@ -1567,7 +1619,11 @@
     "sidebar": {
       "introduction": "Introduction",
       "membership": "Membership Guide",
-      "standards": "PM Standards"
+      "standards": "PM Standards",
+      "certifications": "Certifications",
+      "governance": "Governance & Bylaws",
+      "events": "Events & Programs",
+      "resources": "Resources & Library"
     },
     "onThisPage": "On This Page",
     "copyPage": "Copy Page",

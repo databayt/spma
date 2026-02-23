@@ -41,6 +41,7 @@ export default function BookCover({
           height={600}
           className="book-cover-detail-image"
           priority
+          unoptimized
           onError={() => setImageError(true)}
         />
       ) : (

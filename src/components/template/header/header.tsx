@@ -15,7 +15,7 @@ const easeOut: [number, number, number, number] = [0.33, 1, 0.68, 1];
 
 // LTR: logo starts at viewport center, slides to left
 const logoVariantsLTR = {
-  hidden: { x: "calc(50vw - 50% - 1rem)" },
+  hidden: { x: "calc(50vw - 50% - 6rem)" },
   visible: {
     x: 0,
     transition: { duration: 0.8, ease: easeOut, delay: 1.8 },
@@ -24,7 +24,7 @@ const logoVariantsLTR = {
 
 // RTL: logo starts at viewport center, slides to right
 const logoVariantsRTL = {
-  hidden: { x: "calc(-50vw + 50% + 1rem)" },
+  hidden: { x: "calc(-50vw + 50% + 6rem)" },
   visible: {
     x: 0,
     transition: { duration: 0.8, ease: easeOut, delay: 1.8 },
@@ -67,7 +67,7 @@ export function Header({ lang, dictionary }: HeaderProps) {
   );
 
   return (
-    <header className="relative z-50 overflow-hidden bg-background">
+    <header className="relative z-50 overflow-hidden bg-background hidden md:block">
       <nav className="layout-container py-3 flex items-center justify-between">
         <motion.div variants={logoVariants} initial="hidden" animate="visible">
           <Link href={`/${lang}`} className="flex items-center gap-2.5 ms-20">

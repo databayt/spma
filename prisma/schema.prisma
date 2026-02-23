@@ -6,6 +6,70 @@ datasource db {
   provider = "postgresql"
 }
 
+enum Gender {
+  MALE
+  FEMALE
+}
+
+enum Sector {
+  GOVERNMENT
+  PRIVATE
+  NGO
+  ACADEMIC
+  FREELANCE
+}
+
+enum OnboardingStatus {
+  NOT_STARTED
+  IN_PROGRESS
+  COMPLETED
+}
+
+enum ApplicationStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+enum Role {
+  ADMIN
+  MEMBER
+  USER
+}
+
+model Member {
+  id                String            @id @default(cuid())
+  role              Role              @default(USER)
+  fullNameAr        String
+  fullNameEn        String
+  email             String            @unique
+  phone             String
+  city              String
+  gender            Gender
+  image             String?
+  cover             String?
+  jobTitle          String?
+  organization      String?
+  yearsExperience   Int               @default(0)
+  sector            Sector            @default(PRIVATE)
+  certifications    String[]          @default([])
+  committees        String[]          @default([])
+  linkedin          String?
+  twitter           String?
+  onboardingStatus  OnboardingStatus  @default(NOT_STARTED)
+  onboardingStep    String            @default("welcome")
+  applicationStatus ApplicationStatus @default(PENDING)
+  reviewedBy        String?
+  reviewedAt        DateTime?
+  reviewNotes       String?
+  createdAt         DateTime          @default(now())
+  updatedAt         DateTime          @updatedAt
+
+  @@index([onboardingStatus])
+  @@index([applicationStatus])
+  @@index([email])
+}
+
 model Article {
   id          String   @id @default(cuid())
   title       String

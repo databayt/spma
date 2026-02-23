@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const easeOut: [number, number, number, number] = [0.33, 1, 0.68, 1];
 
 const videoVariants = {
-  hidden: { x: "-25%", scale: 1.4, opacity: 1 },
+  hidden: { x: "-30%", scale: 1.4, opacity: 1 },
   visible: {
     x: 0,
     scale: 1,
@@ -15,7 +15,7 @@ const videoVariants = {
 };
 
 const textVariants = {
-  hidden: { x: "75%", opacity: 0 },
+  hidden: { x: "45%", opacity: 0 },
   visible: {
     x: 0,
     opacity: 1,
