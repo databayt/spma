@@ -2,9 +2,10 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { useMemo } from "react";
 import { motion } from "framer-motion";
 import { GenericCommandMenu } from "@/components/atom/generic-command-menu";
-import { spmaSearchConfig } from "@/components/atom/generic-command-menu/spma-config";
+import { getSpmaSearchConfig } from "@/components/atom/generic-command-menu/spma-config";
 import { LanguageToggle } from "@/components/template/site-header/language-toggle";
 import { ModeSwitcher } from "@/components/template/site-header/mode-switcher";
 import { MenuNav } from "./menu-nav";
@@ -60,6 +61,11 @@ export function Header({ lang, dictionary }: HeaderProps) {
   const logoVariants = isAr ? logoVariantsRTL : logoVariantsLTR;
   const actionsVariants = isAr ? actionsVariantsRTL : actionsVariantsLTR;
 
+  const searchConfig = useMemo(
+    () => getSpmaSearchConfig(lang, (dictionary as any).commandMenu),
+    [lang, dictionary]
+  );
+
   return (
     <header className="relative z-50 overflow-hidden bg-background">
       <nav className="layout-container py-3 flex items-center justify-between">
@@ -84,7 +90,7 @@ export function Header({ lang, dictionary }: HeaderProps) {
           initial="hidden"
           animate="visible"
         >
-          <GenericCommandMenu config={spmaSearchConfig} variant="icon" />
+          <GenericCommandMenu config={searchConfig} variant="icon" />
           <LanguageToggle />
           <ModeSwitcher />
           <MenuNav lang={lang} dictionary={dictionary} />

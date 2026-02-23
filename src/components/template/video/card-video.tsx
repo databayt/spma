@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { VideoIcon } from "lucide-react";
 import Image from "next/image";
+import { useTranslations } from "@/lib/use-translations";
 
 interface CardItem {
   title: string;
@@ -22,6 +23,7 @@ interface HoverEffectProps {
 
 export const HoverEffect = ({ items, className }: HoverEffectProps) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const { locale } = useTranslations();
 
   if (!items || items.length === 0) {
     return null;
@@ -36,7 +38,7 @@ export const HoverEffect = ({ items, className }: HoverEffectProps) => {
     >
       {items.map((item, idx) => (
         <Link
-          href={`/video/${item?.link}`}
+          href={`/${locale}/video/${item?.link}`}
           key={item?.link}
           className="relative group block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
@@ -61,7 +63,7 @@ export const HoverEffect = ({ items, className }: HoverEffectProps) => {
           </AnimatePresence>
           <Card>
             <div className="aspect-video relative w-full overflow-hidden rounded-lg">
-              <div className="absolute top-2 right-2 z-10">
+              <div className="absolute top-2 end-2 z-10">
                 <div className="bg-black/50 p-1.5 rounded-full">
                   <VideoIcon className="w-4 h-4 text-white" />
                 </div>

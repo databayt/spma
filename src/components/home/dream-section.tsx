@@ -131,8 +131,8 @@ export function DreamSection({ dictionary }: DreamSectionProps) {
   };
 
   return (
-    <section ref={sectionRef} className="relative h-[200vh] bg-background">
-      <div className="sticky top-0 h-screen py-12 md:py-24 overflow-hidden px-4 md:px-0">
+    <section ref={sectionRef} className="relative h-[300vh] bg-background">
+      <div className="sticky top-0 min-h-screen py-12 md:py-24 px-4 md:px-0">
         {/* Desktop Title Row with scroll animation */}
         <div className="hidden md:flex w-full items-center gap-1 md:gap-1.5 mb-8 md:mb-12">
           {/* FIND */}

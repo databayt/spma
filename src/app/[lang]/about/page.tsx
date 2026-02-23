@@ -1,6 +1,6 @@
 import { getDictionary } from "@/components/internationalization/dictionaries"
 import type { Locale } from "@/components/internationalization"
-import { SiteHeader } from "@/components/template/site-header"
+import { Header } from "@/components/template/header/header"
 import { Footer } from "@/components/marketing/footer"
 import Image from "next/image"
 
@@ -22,9 +22,9 @@ export default async function AboutPage({
 
   return (
     <>
-      <SiteHeader dictionary={dict} />
+      <Header lang={lang} dictionary={dict} />
       <main className="min-h-screen pt-16">
-        <div className="layout-container py-16">
+        <div className="layout-container px-6 md:px-8 py-16">
             {/* Who We Are & Why Us Grid */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-28 mb-20">
               {/* Who We Are */}
@@ -42,8 +42,8 @@ export default async function AboutPage({
                 </div>
                 <div className="mt-8">
                   <Image
-                    src="/abdout.png"
-                    alt="Port Sudan shipping"
+                    src="/open.jpg"
+                    alt="Sudanese shop"
                     width={500}
                     height={250}
                     className="w-full h-[600px] rounded-lg object-cover"
@@ -66,8 +66,8 @@ export default async function AboutPage({
                 </div>
                 <div className="mt-8">
                   <Image
-                    src="/contianer.jpg"
-                    alt="Logistics teamwork"
+                    src="/shop.jpg"
+                    alt="Sudanese street"
                     width={500}
                     height={250}
                     className="w-full h-[600px] rounded-lg object-cover"
@@ -101,7 +101,7 @@ export default async function AboutPage({
                           alt=""
                           width={64}
                           height={64}
-                          className="dark:invert"
+                          className="rounded-lg"
                         />
                       </div>
                       <h3 className="text-foreground text-xl font-semibold">
@@ -143,14 +143,15 @@ export default async function AboutPage({
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
                 {about.boardOfDirectors.members.map((member, index) => {
                   const images = [
-                    'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop',
-                    'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&auto=format&fit=crop',
-                    'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=400&auto=format&fit=crop',
-                    'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=400&auto=format&fit=crop',
-                    'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop',
-                    'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=400&auto=format&fit=crop',
-                    'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop',
-                    'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop',
+                    '/facebook/7.jpg',
+                    '/facebook/4.jpg',
+                    '/facebook/10.jpg',
+                    '/facebook/5.jpg',
+                    '/facebook/6.jpg',
+                    '/facebook/7.jpg',
+                    '/facebook/10.jpg',
+                    '/facebook/5.jpg',
+                    '/facebook/4.jpg',
                   ]
                   return (
                     <div key={index} className="text-center space-y-3 md:space-y-4">

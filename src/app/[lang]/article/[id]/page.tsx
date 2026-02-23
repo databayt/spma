@@ -15,7 +15,7 @@ import { useTranslations } from "@/lib/use-translations";
 
 export default function ArticlePage() {
   const params = useParams();
-  const { t } = useTranslations();
+  const { t, locale } = useTranslations();
   const a = t.article;
   const [article, setArticle] = useState<Article | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -89,7 +89,7 @@ export default function ArticlePage() {
     <div className="layout-container mx-auto md:py-10 py-4">
       <div className="max-w-3xl mx-auto">
         <Link
-          href="/article"
+          href={`/${locale}/article`}
           className={cn(
             buttonVariants({ variant: "ghost", size: "sm" }),
             "mb-6",

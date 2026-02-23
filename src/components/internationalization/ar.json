@@ -855,19 +855,20 @@
     ],
     "boardOfDirectors": {
       "subtitle": "ق ي ا د ت ن ا",
-      "title": "مجلس الإدارة",
-      "titleMobileLine1": "مجلس",
-      "titleMobileLine2": "الإدارة",
-      "description": "تعرف على أعضاء فريقنا المتفانين الذين يقودون عبدوت بخبرتهم والتزامهم بالتميز.",
+      "title": "المكتب التنفيذي",
+      "titleMobileLine1": "المكتب",
+      "titleMobileLine2": "التنفيذي",
+      "description": "المكتب التنفيذي للجمعية السودانية لإدارة المشاريع 2025 - 2027",
       "members": [
-        { "name": "مازن عبدوت", "position": "الرئيس التنفيذي" },
-        { "name": "سامي ضرار", "position": "مدير العمليات" },
-        { "name": "William Parker", "position": "المدير التقني" },
-        { "name": "David Mitchell", "position": "المدير المالي" },
-        { "name": "James Wilson", "position": "مدير التسويق" },
-        { "name": "Robert Chen", "position": "مدير المنتجات" },
-        { "name": "Michael Brown", "position": "المستشار القانوني" },
-        { "name": "Thomas Anderson", "position": "مدير الأمن" }
+        { "name": "د. أحمد العقيد", "position": "الرئيس" },
+        { "name": "م. براءة سمير عبدالهادي", "position": "أمين الإعلام" },
+        { "name": "م. شيرين عبدالسلام", "position": "الأمين العام والمقرر" },
+        { "name": "م. عماد الدين سلطاني", "position": "الأمين المالي" },
+        { "name": "د. لينا العناب", "position": "الباحث العلمي" },
+        { "name": "م. أنوار قسيم الله", "position": "أمين التطوير المهني" },
+        { "name": "م. أحمد المجتبى", "position": "أمين التخطيط والبرامج" },
+        { "name": "م. ندى محمد علي", "position": "أمين العضوية والمتطوعين" },
+        { "name": "أ. ريان محمد الحسن", "position": "أمين العلاقات الخارجية" }
       ]
     }
   },
@@ -1509,7 +1510,7 @@
   },
   "dream": {
     "title": "اعثر على حلمك",
-    "subtitle": "أخبرنا ما تحلم به وسنحققه لك",
+    "subtitle": "أخبرنا ما تحلم به",
     "tags": {
       "storytelling": "سرد القصص",
       "commercials": "إعلانات",
@@ -1568,15 +1569,19 @@
       "membership": "دليل العضوية",
       "standards": "معايير إدارة المشاريع"
     },
-    "onThisPage": "في هذه الصفحة"
+    "onThisPage": "في هذه الصفحة",
+    "copyPage": "نسخ الصفحة",
+    "viewAsMarkdown": "عرض كـ Markdown",
+    "openInChatGPT": "فتح في ChatGPT",
+    "openInClaude": "فتح في Claude"
   },
   "footer": {
     "description": "حركة وطنية مكرسة لبناء مستقبل أفضل للسودان من خلال التعليم والمجتمع والمشاركة المدنية.",
     "quickLinks": "روابط سريعة",
     "resources": "الموارد",
     "contact": "تواصل معنا",
-    "phone": "+249 123 456 789",
-    "email": "info@spma.sd",
+    "phone": "+249 15 672 1400",
+    "email": "info@sudanpma.org",
     "copyright": "جميع الحقوق محفوظة.",
     "newsletter": {
       "title": "ابقَ على اطلاع",
@@ -1705,6 +1710,41 @@
       "edit": "تعديل",
       "share": "مشاركة",
       "delete": "حذف"
-    }
+    },
+    "subtitle": "مدونة الحركة"
+  },
+  "video": {
+    "title": "الوثائقيات",
+    "subtitle": "ما يضر الجهل به",
+    "moreVideos": "لمزيد من الفيديوهات، تفضل بزيارة قناتنا على يوتيوب",
+    "youtubeChannel": "قناة اليوتيوب",
+    "goBack": "الرجوع"
+  },
+  "eventTemplate": {
+    "title": "الأحداث",
+    "subtitle": "القادمة",
+    "feedTimeAgo": "منذ 4 دقائق في",
+    "feedHashtag": "#أحداث",
+    "feedBody": "تدعوكم الجمعية السودانية لإدارة المشاريع لحضور المؤتمر السنوي - نستعرض فيه أحدث ممارسات إدارة المشاريع ونناقش تطوير الكفاءات المهنية في السودان",
+    "noEvents": "لا توجد فعاليات في هذا التصنيف"
+  },
+  "commandMenu": {
+    "home": "الرئيسية",
+    "about": "من نحن",
+    "events": "الفعاليات",
+    "publications": "المنشورات",
+    "library": "المكتبة",
+    "knowledge": "المعرفة",
+    "articles": "المقالات",
+    "videos": "الفيديوهات",
+    "members": "الأعضاء",
+    "join": "الانضمام",
+    "docs": "التوثيق",
+    "chatbot": "المساعد",
+    "search": "بحث سريع",
+    "noResults": "لا توجد نتائج",
+    "light": "فاتح",
+    "dark": "داكن",
+    "system": "النظام"
   }
 }

@@ -1172,8 +1172,43 @@ export interface Dictionary {
       actions?: string
     }
   }
+  video?: {
+    title: string
+    subtitle: string
+    moreVideos: string
+    youtubeChannel: string
+    goBack: string
+  }
+  eventTemplate?: {
+    title: string
+    subtitle: string
+    feedTimeAgo: string
+    feedHashtag: string
+    feedBody: string
+    noEvents: string
+  }
+  commandMenu?: {
+    home: string
+    about: string
+    events: string
+    publications: string
+    library: string
+    knowledge: string
+    articles: string
+    videos: string
+    members: string
+    join: string
+    docs: string
+    chatbot: string
+    search: string
+    noResults: string
+    light: string
+    dark: string
+    system: string
+  }
   article?: {
     title: string
+    subtitle?: string
     addArticle: string
     editArticle: string
     createArticle: string

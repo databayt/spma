@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getDictionary } from "@/components/internationalization/dictionaries";
 import type { Locale } from "@/components/internationalization/config";
 import { Header } from "@/components/template/header/header";
-import { Footer } from "@/components/template/footer/footer";
+import { Footer } from "@/components/marketing/footer";
 import LibraryAdminContent from "@/components/library/admin/content";
 
 export const dynamic = "force-dynamic";

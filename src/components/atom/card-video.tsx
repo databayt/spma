@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { VideoIcon } from "lucide-react";
 import Image from "next/image";
+import { useTranslations } from "@/lib/use-translations";
 
 interface CardItem {
   title: string;
@@ -22,6 +23,7 @@ interface HoverEffectProps {
 
 export const HoverEffect = ({ items, className }: HoverEffectProps) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const { locale } = useTranslations();
 
   if (!items || items.length === 0) {
     return null;
@@ -34,7 +36,7 @@ export const HoverEffect = ({ items, className }: HoverEffectProps) => {
     <div className="space-y-10">
       {/* Featured Video Section */}
       <Link
-        href={`/video/${featuredItem?.link}`}
+        href={`/${locale}/video/${featuredItem?.link}`}
         className="relative group block w-full rounded-lg overflow-hidden hover:bg-neutral-50 dark:hover:bg-slate-800/[0.4] transition-all duration-200"
         onMouseEnter={() => setHoveredIndex(-1)}
         onMouseLeave={() => setHoveredIndex(null)}
@@ -58,7 +60,7 @@ export const HoverEffect = ({ items, className }: HoverEffectProps) => {
         </AnimatePresence>
         <div className="flex flex-col md:flex-row gap-6 p-2 relative z-20">
           <div className="md:w-2/5 aspect-video relative overflow-hidden rounded-lg">
-            <div className="absolute top-2 right-2 z-10">
+            <div className="absolute top-2 end-2 z-10">
               <div className="bg-black/50 p-2.5 rounded-full">
                 <VideoIcon className="w-5 h-5 text-white" />
               </div>
@@ -96,7 +98,7 @@ export const HoverEffect = ({ items, className }: HoverEffectProps) => {
       >
         {gridItems.map((item, idx) => (
           <Link
-            href={`/video/${item?.link}`}
+            href={`/${locale}/video/${item?.link}`}
             key={item?.link}
             className="relative group block p-2 h-full w-full"
             onMouseEnter={() => setHoveredIndex(idx)}
@@ -121,7 +123,7 @@ export const HoverEffect = ({ items, className }: HoverEffectProps) => {
             </AnimatePresence>
             <Card>
               <div className="aspect-video relative w-full overflow-hidden rounded-lg">
-                <div className="absolute top-2 right-2 z-10">
+                <div className="absolute top-2 end-2 z-10">
                   <div className="bg-black/50 p-1.5 rounded-full">
                     <VideoIcon className="w-4 h-4 text-white" />
                   </div>

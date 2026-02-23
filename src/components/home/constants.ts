@@ -23,6 +23,7 @@ export const EVENTS: EventItem[] = [
     date: "2026-03-01",
     type: "workshop",
     typeLabel: "ورشة عمل",
+    typeLabelEn: "Workshop",
     location: "online",
     color: "#002F5D",
   },
@@ -33,6 +34,7 @@ export const EVENTS: EventItem[] = [
     date: "2026-02-15",
     type: "webinar",
     typeLabel: "ندوة",
+    typeLabelEn: "Webinar",
     location: "online",
     color: "#F9B844",
   },
@@ -43,6 +45,7 @@ export const EVENTS: EventItem[] = [
     date: "2026-01-20",
     type: "webinar",
     typeLabel: "ندوة",
+    typeLabelEn: "Webinar",
     location: "online",
     color: "#002F5D",
   },
@@ -53,6 +56,7 @@ export const EVENTS: EventItem[] = [
     date: "2026-04-10",
     type: "course",
     typeLabel: "دورة",
+    typeLabelEn: "Course",
     location: "online",
     color: "#F9B844",
   },
@@ -63,6 +67,7 @@ export const EVENTS: EventItem[] = [
     date: "2026-05-05",
     type: "course",
     typeLabel: "دورة",
+    typeLabelEn: "Course",
     location: "online",
     color: "#002F5D",
   },
@@ -73,6 +78,7 @@ export const EVENTS: EventItem[] = [
     date: "2026-05-20",
     type: "workshop",
     typeLabel: "ورشة عمل",
+    typeLabelEn: "Workshop",
     location: "online",
     color: "#F9B844",
   },
@@ -91,8 +97,8 @@ export const BOARD_MEMBERS: BoardMember[] = [
 ];
 
 export const SOCIAL_LINKS: SocialLink[] = [
-  { icon: "facebook", href: "https://www.facebook.com/sudanpma", label: "Facebook" },
-  { icon: "linkedin", href: "https://linkedin.com/company/sdpam", label: "LinkedIn" },
+  { icon: "facebook", href: "https://www.facebook.com/Sudanpma", label: "Facebook" },
+  { icon: "linkedin", href: "https://www.linkedin.com/company/sdpam", label: "LinkedIn" },
   { icon: "twitter", href: "#", label: "X" },
   { icon: "youtube", href: "#", label: "YouTube" },
 ];

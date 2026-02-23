@@ -61,8 +61,8 @@ export const videos: VideoItem[] = [
     title: "رؤية تحليلية للتاريخ السياسي السوداني الحديث",
     description:
       "في السودان، يوجد قيمة التضامن ولكن بدلاً من التضامن في الاستهلاك فقط، دعونا نتضامن في الإنتاج أيضًا",
-    link: "yjSIrCLQL9U",
-    image: ytThumb("yjSIrCLQL9U"),
+    link: "2WbrmZBR4mQ",
+    image: ytThumb("2WbrmZBR4mQ"),
     date: "14 ابريل 2024",
     author: "قاسم الظافر",
   },
@@ -70,8 +70,8 @@ export const videos: VideoItem[] = [
     title: "رؤية الحركة لمسألة النهضة",
     description:
       "التدابير السياسية وحدها لا تكفي ليخرج السودان من هذه الحفرة، ولكن السودان يحتاج ايضا إلى إصلاح ثقافي",
-    link: "9uBptAA6CUA",
-    image: ytThumb("9uBptAA6CUA"),
+    link: "aHU19xgbFM8",
+    image: ytThumb("aHU19xgbFM8"),
     date: "18 ابريل 2024",
     author: "المقداد الهجان",
   },
@@ -79,8 +79,8 @@ export const videos: VideoItem[] = [
     title: "لماذا يحتاج السودان لحركة اجتماعية؟",
     description:
       "القبيلة والجهة مخزن قسم كريمة ومساحة تربية فاضلة, يحثان على التراحم والتعارف بين الناس",
-    link: "c3zWKvbm1vY",
-    image: ytThumb("c3zWKvbm1vY"),
+    link: "2UlO36AoWTY",
+    image: ytThumb("2UlO36AoWTY"),
     date: "14 ابريل 2024",
     author: "هشام احمد",
   },
@@ -88,8 +88,8 @@ export const videos: VideoItem[] = [
     title: "كيف يستعيد المجتمع سلطته",
     description:
       "في السودان، يوجد قيمة التضامن ولكن بدلاً من التضامن في الاستهلاك فقط، دعونا نتضامن في الإنتاج أيضًا",
-    link: "WZVV8EGq2JQ",
-    image: ytThumb("WZVV8EGq2JQ"),
+    link: "YZELv8AbKB8",
+    image: ytThumb("YZELv8AbKB8"),
     date: "قبل سنتين",
     author: "قاسم الظافر",
   },
@@ -97,8 +97,8 @@ export const videos: VideoItem[] = [
     title: "التيارات العلمانية وتفكيك الاسرة",
     description:
       "التدابير السياسية وحدها لا تكفي ليخرج السودان من هذه الحفرة، ولكن السودان يحتاج ايضا إلى إصلاح ثقافي",
-    link: "yK0chPj_biY",
-    image: ytThumb("yK0chPj_biY"),
+    link: "Chzi4qwDThM",
+    image: ytThumb("Chzi4qwDThM"),
     date: "18 ابريل 2024",
     author: "ابو بكر جيكوني",
   },
@@ -106,19 +106,10 @@ export const videos: VideoItem[] = [
     title: "المؤاني البحرية مشكلات وحلول",
     description:
       "التدابير السياسية وحدها لا تكفي ليخرج السودان من هذه الحفرة، ولكن السودان يحتاج ايضا إلى إصلاح ثقافي",
-    link: "FNaAYXMH3ms",
-    image: ytThumb("FNaAYXMH3ms"),
+    link: "Bl6jGOQkIm4",
+    image: ytThumb("Bl6jGOQkIm4"),
     date: "18 ابريل 2024",
     author: "قاسم الظافر",
-  },
-  {
-    title: "مناقشة كتاب النباهه والاستحمار",
-    description:
-      "في السودان، يوجد قيمة التضامن ولكن بدلاً من التضامن في الاستهلاك فقط، دعونا نتضامن في الإنتاج أيضًا",
-    link: "TVo6Dxr2QgA",
-    image: ytThumb("TVo6Dxr2QgA"),
-    date: "14 ابريل 2024",
-    author: "حسن يحي",
   },
 ];
 

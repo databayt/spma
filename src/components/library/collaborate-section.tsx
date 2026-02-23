@@ -26,7 +26,7 @@ export function CollaborateSection({
         </div>
 
         {/* Content - Right side */}
-        <div className="flex flex-col justify-center p-8 lg:w-1/2 lg:p-12">
+        <div className="flex flex-col justify-center bg-[#F3F4F6] p-8 lg:w-1/2 lg:p-12">
           <h2 className="mb-2 text-3xl font-semibold tracking-tight lg:text-4xl">
             {lib?.title || "PMBOK Guide - 7th Edition"}
           </h2>

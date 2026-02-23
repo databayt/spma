@@ -1,5 +1,8 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
+import { useTranslations } from "@/lib/use-translations";
 
 interface Video {
   id: string;
@@ -8,8 +11,10 @@ interface Video {
 }
 
 const VideoCard: React.FC<Video> = ({ id, title, thumbnail }) => {
+  const { locale } = useTranslations();
+
   return (
-    <Link href={`/video/${id}`}>
+    <Link href={`/${locale}/video/${id}`}>
       <div className="w-full md:w-1/2 xl:w-1/3 p-4">
         <img src={thumbnail} alt={title} className="w-full h-64 object-cover" />
         <h2 className="text-lg font-bold">{title}</h2>

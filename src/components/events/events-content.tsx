@@ -70,7 +70,8 @@ export function EventsContent({ lang, dictionary }: Props) {
 
       {filteredEvents.length === 0 && (
         <div className="text-center py-12 text-muted-foreground">
-          {isAr ? "لا توجد فعاليات في هذا التصنيف" : "No events in this category"}
+          {(dictionary as any).eventTemplate?.noEvents ??
+            (isAr ? "لا توجد فعاليات في هذا التصنيف" : "No events in this category")}
         </div>
       )}
     </div>

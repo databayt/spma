@@ -40,7 +40,7 @@ export function EventCard({ event, lang, dictionary }: Props) {
         {/* Meta */}
         <div className="flex items-center justify-between">
           <span className="text-xs font-medium bg-primary/10 text-primary px-3 py-1 rounded-full">
-            {event.typeLabel}
+            {isAr ? event.typeLabel : event.typeLabelEn}
           </span>
           <div className="flex items-center gap-1 text-xs text-muted-foreground">
             <MapPin className="w-3 h-3" />

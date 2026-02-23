@@ -8,6 +8,7 @@ import { useTheme } from "next-themes"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
+import { useTranslations } from "@/lib/use-translations"
 
 import {
   GLASS,
@@ -58,11 +59,13 @@ export function GenericCommandMenu({
   const [dropdownExiting, setDropdownExiting] = React.useState(false)
   const { setTheme } = useTheme()
   const { recentSearchItems, addRecentItem } = useRecentItems()
+  const { t } = useTranslations()
+  const cmd = (t as any).commandMenu
 
   // Ref to read showDropdown in callbacks without stale closures
   const showDropdownRef = React.useRef(false)
 
-  const basePlaceholder = "Spotlight Search"
+  const basePlaceholder = config.placeholder || "Spotlight Search"
   const emptyMessage = config.emptyMessage || "No results found."
 
   // Whether dropdown should be visible (intent)
@@ -393,7 +396,7 @@ export function GenericCommandMenu({
                             <div data-slot="icon-wrapper">
                               <Sun className="size-5" />
                             </div>
-                            Light
+                            {cmd?.light ?? "Light"}
                           </SpotlightItem>
                           <SpotlightItem
                             onSelect={() => runCommand(() => setTheme("dark"))}
@@ -401,7 +404,7 @@ export function GenericCommandMenu({
                             <div data-slot="icon-wrapper">
                               <Moon className="size-5" />
                             </div>
-                            Dark
+                            {cmd?.dark ?? "Dark"}
                           </SpotlightItem>
                           <SpotlightItem
                             onSelect={() =>
@@ -411,7 +414,7 @@ export function GenericCommandMenu({
                             <div data-slot="icon-wrapper">
                               <Laptop className="size-5" />
                             </div>
-                            System
+                            {cmd?.system ?? "System"}
                           </SpotlightItem>
                         </SpotlightGroup>
                       )}

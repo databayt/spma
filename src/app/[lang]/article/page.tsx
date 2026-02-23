@@ -19,7 +19,7 @@ import { useTranslations } from "@/lib/use-translations";
 
 export default function AllArticlesPage() {
   const router = useRouter();
-  const { t } = useTranslations();
+  const { t, locale } = useTranslations();
   const a = t.article;
   const { modal, openModal, closeModal } = useModal();
   const [articles, setArticles] = React.useState<Article[]>([]);
@@ -72,7 +72,7 @@ export default function AllArticlesPage() {
       id: article.id,
       title: article.title,
       description: article.description,
-      link: `/article/${article.slug}`,
+      link: `/${locale}/article/${article.slug}`,
       image: article.image,
       date: formattedDate,
       author: article.author,

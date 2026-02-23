@@ -52,15 +52,20 @@ interface DocsTableOfContentsProps {
   toc: TocItem[]
   variant?: "list" | "dropdown"
   className?: string
-  onThisPageText?: string
+  dictionary?: {
+    docs?: {
+      onThisPage?: string
+    }
+  }
 }
 
 export function DocsTableOfContents({
   toc,
   variant = "list",
   className,
-  onThisPageText = "On This Page",
+  dictionary,
 }: DocsTableOfContentsProps) {
+  const onThisPageText = dictionary?.docs?.onThisPage || "On This Page"
   const [open, setOpen] = React.useState(false)
   const itemIds = React.useMemo(
     () => toc?.map((item) => item.url.replace("#", "")) ?? [],

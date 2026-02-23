@@ -19,6 +19,7 @@ export interface EventItem {
   date: string;
   type: "workshop" | "webinar" | "course" | "meetup" | "podcast";
   typeLabel: string;
+  typeLabelEn: string;
   location: "online" | "in-person";
   speaker?: string;
   description?: string;

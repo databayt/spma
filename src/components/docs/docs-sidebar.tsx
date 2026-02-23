@@ -37,12 +37,12 @@ export function DocsSidebar({
 
   return (
     <Sidebar
-      className="sticky top-0 z-30 hidden h-[calc(100svh-4rem)] overscroll-none bg-transparent lg:flex"
+      className="sticky top-[calc(var(--header-height)+2rem)] z-30 hidden h-[calc(100svh-var(--footer-height)-4rem)] overscroll-none bg-transparent lg:flex"
       collapsible="none"
       {...props}
     >
       <SidebarContent className="no-scrollbar overflow-x-hidden">
-        <div className="pb-4 pt-6 ps-0">
+        <div className="pb-4 pt-2 ps-0">
           <SidebarGroup className="p-0">
             <SidebarGroupContent>
               <SidebarMenu>

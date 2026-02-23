@@ -5,10 +5,12 @@ import { PhotoGridSection } from "./photo-grid-section";
 import { DreamSection } from "./dream-section";
 import { MobileDreamSection } from "@/components/atom/mobile-dream-section";
 import { ParallaxSection } from "@/components/template/parallax-section";
-import { AboutPreview } from "./about-preview";
-import { Footer } from "@/components/template/footer/footer";
+import { Footer } from "@/components/marketing/footer";
 import FeaturedVideos from "@/components/template/video/featured-video";
 import FeaturedArticles from "@/components/template/article/featured-articles";
+import Event from "@/components/template/event/event";
+import LogoCloud from "./logo-cloud";
+import Testimonials from "@/components/template/testimonial/testimonials";
 import type { Dictionary } from "@/components/internationalization/dictionaries";
 
 interface ContentProps {
@@ -36,9 +38,11 @@ export function Content({ lang, dictionary }: ContentProps) {
             <MobileDreamSection dictionary={dictionary} />
           </div>
         </ParallaxSection>
-        <AboutPreview lang={lang} dictionary={dictionary} />
         <FeaturedVideos />
         <FeaturedArticles />
+        <Event />
+        <LogoCloud lang={lang} />
+        <Testimonials />
       </main>
       <Footer lang={lang} dictionary={dictionary} />
     </>

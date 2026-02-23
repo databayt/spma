@@ -26,7 +26,7 @@ export function Footer({ lang, dictionary }: FooterProps) {
       <div className="layout-container max-w-7xl mx-auto py-16 md:py-20">
         <div className="flex flex-col md:flex-row gap-12 md:gap-10">
           {/* Logo & Description */}
-          <div className="md:w-1/4">
+          <div className="md:w-1/4 -mt-4 md:-mt-6">
             <Link href={`/${lang}`} className="inline-block mb-5">
               <Image
                 src="/logo.webp"

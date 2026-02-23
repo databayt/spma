@@ -855,19 +855,20 @@
     ],
     "boardOfDirectors": {
       "subtitle": "O u r   L e a d e r s h i p",
-      "title": "Board of Directors",
-      "titleMobileLine1": "",
-      "titleMobileLine2": "",
-      "description": "Meet our dedicated team members who guide Abdout with their expertise and commitment to excellence.",
+      "title": "Executive Board",
+      "titleMobileLine1": "Executive",
+      "titleMobileLine2": "Board",
+      "description": "The Executive Board of the Sudanese Project Management Association 2025 - 2027",
       "members": [
-        { "name": "Mazin Abdout", "position": "CEO" },
-        { "name": "Sami Dirar", "position": "COO" },
-        { "name": "William Parker", "position": "CTO" },
-        { "name": "David Mitchell", "position": "CFO" },
-        { "name": "James Wilson", "position": "CMO" },
-        { "name": "Robert Chen", "position": "CPO" },
-        { "name": "Michael Brown", "position": "CLO" },
-        { "name": "Thomas Anderson", "position": "CSO" }
+        { "name": "Dr. Ahmed Al-Aqeed", "position": "President" },
+        { "name": "Eng. Baraa Samir Abdulhadi", "position": "Media Secretary" },
+        { "name": "Eng. Shereen Abdulsalam", "position": "Secretary General & Rapporteur" },
+        { "name": "Eng. Imad Eldin Sultani", "position": "Financial Secretary" },
+        { "name": "Dr. Lina Al-Annab", "position": "Scientific Researcher" },
+        { "name": "Eng. Anwar Gasim Allah", "position": "Professional Development Secretary" },
+        { "name": "Eng. Ahmed Al-Mujtaba", "position": "Planning & Programs Secretary" },
+        { "name": "Eng. Nada Mohammed Ali", "position": "Membership & Volunteers Secretary" },
+        { "name": "Ms. Rayan Mohammed Al-Hassan", "position": "External Relations Secretary" }
       ]
     }
   },
@@ -1509,7 +1510,7 @@
   },
   "dream": {
     "title": "Find Your Dream",
-    "subtitle": "Tell us what you dream about and we'll make it happen",
+    "subtitle": "Tell us what you dream about",
     "tags": {
       "storytelling": "Storytelling",
       "commercials": "Commercials",
@@ -1568,15 +1569,19 @@
       "membership": "Membership Guide",
       "standards": "PM Standards"
     },
-    "onThisPage": "On This Page"
+    "onThisPage": "On This Page",
+    "copyPage": "Copy Page",
+    "viewAsMarkdown": "View as Markdown",
+    "openInChatGPT": "Open in ChatGPT",
+    "openInClaude": "Open in Claude"
   },
   "footer": {
     "description": "A national movement dedicated to building a better future for Sudan through education, community, and civic engagement.",
     "quickLinks": "Quick Links",
     "resources": "Resources",
     "contact": "Contact",
-    "phone": "+249 123 456 789",
-    "email": "info@spma.sd",
+    "phone": "+249 15 672 1400",
+    "email": "info@sudanpma.org",
     "copyright": "All rights reserved.",
     "newsletter": {
       "title": "Stay Updated",
@@ -1705,6 +1710,41 @@
       "edit": "Edit",
       "share": "Share",
       "delete": "Delete"
-    }
+    },
+    "subtitle": "SPMA Blog"
+  },
+  "video": {
+    "title": "Documentaries",
+    "subtitle": "What ignorance can harm",
+    "moreVideos": "For more videos, visit our YouTube channel",
+    "youtubeChannel": "YouTube Channel",
+    "goBack": "Go Back"
+  },
+  "eventTemplate": {
+    "title": "Events",
+    "subtitle": "Upcoming",
+    "feedTimeAgo": "4 minutes ago in",
+    "feedHashtag": "#events",
+    "feedBody": "SPMA invites you to attend the annual conference - where we showcase the latest project management practices and discuss professional development in Sudan",
+    "noEvents": "No events in this category"
+  },
+  "commandMenu": {
+    "home": "Home",
+    "about": "About",
+    "events": "Events",
+    "publications": "Publications",
+    "library": "Library",
+    "knowledge": "Knowledge",
+    "articles": "Articles",
+    "videos": "Videos",
+    "members": "Members",
+    "join": "Join",
+    "docs": "Docs",
+    "chatbot": "Chatbot",
+    "search": "Spotlight Search",
+    "noResults": "No results found.",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
   }
 }
